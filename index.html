@@ -2,1000 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1E3A8A" />
+  <meta name="description" content="QuizForge — Premium PYQ Engine for JEE, NEET, UPSC, CAT, SAT & GK" />
   <title>QuizForge — Premium PYQ Engine</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-
-  <style>
-  /* ═══════════════════════════════════════════════════════════
-     DESIGN SYSTEM — "Luxury Academic"
-     Warm Cream · Royal Blue · Rich Purple · Warm Orange
-  ═══════════════════════════════════════════════════════════ */
-  :root {
-    /* Parchment Backgrounds */
-    --cream:       #FAF6EF;
-    --cream-2:     #F3EBD8;
-    --cream-3:     #E8DCC8;
-    --white:       #FFFFFF;
-    --warm-white:  #FFFDF9;
-
-    /* Deep Royal Blue — Brand Primary */
-    --blue-950:    #0D1D52;
-    --blue-900:    #1A3176;
-    --blue-800:    #1E3A8A;
-    --blue-700:    #1D4ED8;
-    --blue-500:    #3B82F6;
-    --blue-200:    #BFDBFE;
-    --blue-100:    #EFF6FF;
-    --blue-dim:    rgba(30,58,138,0.09);
-    --blue-glow:   rgba(59,130,246,0.22);
-
-    /* Rich Purple — Accent */
-    --purple-900:  #3B0764;
-    --purple-700:  #6D28D9;
-    --purple-500:  #8B5CF6;
-    --purple-200:  #DDD6FE;
-    --purple-100:  #F5F3FF;
-    --purple-dim:  rgba(109,40,217,0.1);
-    --purple-glow: rgba(139,92,246,0.2);
-
-    /* Warm Orange — CTA & Energy */
-    --orange-800:  #9A3412;
-    --orange-700:  #C2410C;
-    --orange-600:  #EA580C;
-    --orange-500:  #F97316;
-    --orange-200:  #FED7AA;
-    --orange-100:  #FFF7ED;
-    --orange-dim:  rgba(234,88,12,0.1);
-    --orange-glow: rgba(249,115,22,0.25);
-
-    /* Amber / Gold */
-    --gold-800:    #92400E;
-    --gold-700:    #B45309;
-    --gold-500:    #D97706;
-    --gold-300:    #FCD34D;
-    --gold-100:    #FFFBEB;
-
-    /* Semantic */
-    --green-700:   #15803D;
-    --green-600:   #16A34A;
-    --green-dim:   rgba(21,128,61,0.1);
-    --red-700:     #B91C1C;
-    --red-600:     #DC2626;
-    --red-dim:     rgba(185,28,28,0.1);
-
-    /* Typography */
-    --text-950:    #0C0A09;
-    --text-800:    #1C1917;
-    --text-600:    #44403C;
-    --text-400:    #78716C;
-    --text-300:    #A8A29E;
-    --text-200:    #D6D3D1;
-
-    /* Borders */
-    --border:      rgba(28,25,23,0.1);
-    --border-2:    rgba(28,25,23,0.18);
-    --border-3:    rgba(28,25,23,0.06);
-
-    /* Exam accent colors */
-    --exam-upsc:   #B91C1C;
-    --exam-jee:    #1E3A8A;
-    --exam-neet:   #15803D;
-    --exam-cat:    #B45309;
-    --exam-sat:    #6D28D9;
-    --exam-gk:     #EA580C;
-
-    /* Shadows */
-    --shadow-sm:   0 1px 3px rgba(28,25,23,0.08), 0 1px 2px rgba(28,25,23,0.04);
-    --shadow-md:   0 4px 16px rgba(28,25,23,0.1), 0 2px 6px rgba(28,25,23,0.06);
-    --shadow-lg:   0 8px 32px rgba(28,25,23,0.12), 0 4px 12px rgba(28,25,23,0.06);
-    --shadow-xl:   0 20px 60px rgba(28,25,23,0.14), 0 8px 24px rgba(28,25,23,0.08);
-    --shadow-blue: 0 4px 24px rgba(30,58,138,0.18), 0 2px 8px rgba(30,58,138,0.1);
-    --shadow-orange: 0 4px 24px rgba(234,88,12,0.2), 0 2px 8px rgba(234,88,12,0.1);
-  }
-
-  /* ── Reset ── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'Outfit', sans-serif;
-    background: var(--cream);
-    color: var(--text-800);
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-
-  /* ── Warm paper texture overlay ── */
-  body::before {
-    content:'';
-    position:fixed; inset:0; pointer-events:none; z-index:0;
-    background-image:
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
-    opacity: 0.6;
-  }
-
-  /* ── Diagonal grid ── */
-  body::after {
-    content:'';
-    position:fixed; inset:0; pointer-events:none; z-index:0;
-    background-image:
-      linear-gradient(var(--border-3) 1px, transparent 1px),
-      linear-gradient(90deg, var(--border-3) 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
-
-  /* ── Ambient color orbs ── */
-  .orb { position:fixed; border-radius:50%; filter:blur(100px); pointer-events:none; z-index:0; opacity:0.55; }
-  .orb-1 { width:600px; height:600px; top:-200px; right:-100px;
-    background:radial-gradient(circle, rgba(30,58,138,0.12) 0%, transparent 65%);
-    animation: drift1 22s ease-in-out infinite alternate; }
-  .orb-2 { width:400px; height:400px; bottom:-100px; left:-100px;
-    background:radial-gradient(circle, rgba(234,88,12,0.1) 0%, transparent 65%);
-    animation: drift2 28s ease-in-out infinite alternate; }
-  .orb-3 { width:350px; height:350px; top:40%; left:40%;
-    background:radial-gradient(circle, rgba(109,40,217,0.08) 0%, transparent 65%);
-    animation: drift3 20s ease-in-out infinite alternate; }
-  @keyframes drift1 { to { transform: translate(-50px, 30px) scale(1.1); } }
-  @keyframes drift2 { to { transform: translate(40px, -25px) scale(1.12); } }
-  @keyframes drift3 { to { transform: translate(-25px, 50px) scale(0.92); } }
-
-  /* ═══════════════════════════════════════════════════════════
-     LAYOUT
-  ═══════════════════════════════════════════════════════════ */
-  .wrap { position:relative; z-index:1; max-width:880px; margin:0 auto; padding:24px 20px 150px; }
-
-  /* ═══════════════════════════════════════════════════════════
-     HEADER
-  ═══════════════════════════════════════════════════════════ */
-  .header {
-    display:flex; align-items:center; justify-content:space-between;
-    margin-bottom:28px; gap:16px; flex-wrap:wrap;
-    background: linear-gradient(135deg, var(--blue-800), var(--blue-950));
-    border-radius:20px; padding:20px 28px;
-    box-shadow: var(--shadow-blue);
-  }
-
-  .logo { display:flex; align-items:center; gap:14px; }
-  .logo-icon {
-    width:48px; height:48px; border-radius:14px;
-    background: linear-gradient(135deg, var(--orange-600), var(--orange-500));
-    display:flex; align-items:center; justify-content:center;
-    font-size:22px; flex-shrink:0;
-    box-shadow: var(--shadow-orange);
-  }
-  .logo-text {
-    font-family:'Playfair Display', serif;
-    font-size:1.9rem; font-weight:700; letter-spacing:-0.02em;
-    color: #FFFFFF;
-  }
-  .logo-sub {
-    font-family:'JetBrains Mono', monospace;
-    font-size:0.58rem; color:rgba(255,255,255,0.55);
-    letter-spacing:0.14em; display:block; margin-top:-2px;
-    text-transform:uppercase;
-  }
-
-  .header-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-
-  /* Stat pills */
-  .stat-pill {
-    display:flex; align-items:center; gap:7px;
-    background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.2);
-    border-radius:99px; padding:6px 16px;
-    font-size:0.78rem; font-weight:500; color:rgba(255,255,255,0.7);
-    white-space:nowrap; backdrop-filter:blur(8px);
-  }
-  .stat-val {
-    font-family:'JetBrains Mono',monospace; font-size:1rem;
-    font-weight:700; color:#FFFFFF;
-  }
-  .stat-streak { color: var(--gold-300); }
-
-  /* Download btn in header */
-  .btn-download-hdr {
-    display:flex; align-items:center; gap:7px;
-    background:rgba(255,255,255,0.15); border:1.5px solid rgba(255,255,255,0.3);
-    color:#FFFFFF; border-radius:99px; padding:8px 18px;
-    font-family:'Outfit',sans-serif; font-size:0.78rem; font-weight:600;
-    cursor:pointer; transition:all 0.2s; white-space:nowrap; letter-spacing:0.02em;
-  }
-  .btn-download-hdr:hover {
-    background:rgba(255,255,255,0.25); border-color:rgba(255,255,255,0.5);
-    transform:translateY(-1px);
-  }
-
-  /* ═══════════════════════════════════════════════════════════
-     BRAND STRIP (below header)
-  ═══════════════════════════════════════════════════════════ */
-  .brand-strip {
-    display:flex; align-items:center; justify-content:space-between;
-    gap:12px; flex-wrap:wrap; margin-bottom:20px;
-    padding:0 4px;
-  }
-  .brand-tagline {
-    font-size:0.82rem; color:var(--text-400);
-    display:flex; align-items:center; gap:6px;
-  }
-  .live-dot {
-    width:7px; height:7px; border-radius:50%;
-    background: var(--green-600);
-    box-shadow: 0 0 8px rgba(22,163,74,0.5);
-    animation: blink 2s ease-in-out infinite;
-    flex-shrink:0;
-  }
-  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
-
-  /* ═══════════════════════════════════════════════════════════
-     LOADING STATE
-  ═══════════════════════════════════════════════════════════ */
-  .loading-screen {
-    display:none; flex-direction:column; align-items:center;
-    justify-content:center; min-height:60vh; gap:32px; text-align:center;
-  }
-  .loading-screen.show { display:flex; }
-
-  .loader-ring {
-    width:72px; height:72px; border-radius:50%;
-    border:3px solid var(--cream-2);
-    border-top-color: var(--blue-700);
-    animation: spin 0.9s linear infinite;
-  }
-  @keyframes spin { to { transform:rotate(360deg); } }
-
-  .loading-title {
-    font-family:'Playfair Display', serif;
-    font-size:1.7rem; color:var(--blue-800); margin-bottom:4px;
-  }
-  .loading-sub { font-size:0.85rem; color:var(--text-400); }
-
-  .loading-log {
-    font-family:'JetBrains Mono',monospace; font-size:0.72rem;
-    color:var(--text-400); line-height:1.9; max-width:420px; width:100%;
-    background:var(--white); border:1px solid var(--border);
-    border-radius:14px; padding:16px 20px;
-    max-height:160px; overflow-y:auto; text-align:left;
-    box-shadow: var(--shadow-sm);
-  }
-  .log-line { animation:fadeSlide 0.35s ease; }
-  .log-ok   { color:var(--green-700); }
-  .log-err  { color:var(--red-700); }
-  .log-info { color:var(--blue-700); }
-  @keyframes fadeSlide { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:none} }
-
-  .fetch-btn {
-    display:flex; align-items:center; gap:10px;
-    background: linear-gradient(135deg, var(--orange-600), var(--orange-500));
-    color:#FFFFFF; border:none; border-radius:14px; padding:15px 32px;
-    font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:700;
-    cursor:pointer; transition:all 0.25s; letter-spacing:0.04em;
-    box-shadow: var(--shadow-orange);
-  }
-  .fetch-btn:hover { transform:translateY(-2px); box-shadow: 0 8px 36px rgba(234,88,12,0.35); }
-  .fetch-btn:disabled { opacity:0.5; cursor:not-allowed; transform:none; }
-
-  /* ═══════════════════════════════════════════════════════════
-     QUIZ AREA
-  ═══════════════════════════════════════════════════════════ */
-  .quiz-area { display:none; }
-  .quiz-area.show { display:block; }
-
-  /* ── Source bar ── */
-  .source-bar {
-    display:flex; align-items:center; justify-content:space-between;
-    gap:8px; flex-wrap:wrap; margin-bottom:18px;
-  }
-  .source-tag {
-    font-family:'JetBrains Mono',monospace; font-size:0.62rem;
-    letter-spacing:0.06em; color:var(--text-300);
-    display:flex; align-items:center; gap:6px;
-    text-transform:uppercase;
-  }
-  .refresh-btn {
-    padding:9px 18px;
-    background:var(--white); border:1.5px solid var(--border-2);
-    color:var(--text-600); border-radius:99px;
-    font-family:'JetBrains Mono',monospace; font-size:0.65rem; font-weight:700;
-    letter-spacing:0.06em; text-transform:uppercase;
-    cursor:pointer; transition:all 0.2s; white-space:nowrap;
-    box-shadow: var(--shadow-sm);
-  }
-  .refresh-btn:hover { border-color:var(--orange-600); color:var(--orange-600); box-shadow: var(--shadow-orange); }
-
-  /* ── Exam filter tabs ── */
-  .tabs-section { margin-bottom:22px; }
-  .tabs-label {
-    font-size:0.7rem; font-weight:600; letter-spacing:0.1em;
-    text-transform:uppercase; color:var(--text-300);
-    margin-bottom:10px; font-family:'JetBrains Mono',monospace;
-  }
-  .tabs-wrap { display:flex; gap:8px; flex-wrap:wrap; }
-
-  .tab {
-    padding:7px 18px; border-radius:99px;
-    border:1.5px solid var(--border);
-    background:var(--white); color:var(--text-400);
-    font-size:0.75rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase;
-    cursor:pointer; transition:all 0.18s;
-    box-shadow: var(--shadow-sm);
-  }
-  .tab:hover { border-color:var(--blue-500); color:var(--blue-700); }
-  .tab.active {
-    background:var(--blue-dim); border-color:var(--blue-700);
-    color:var(--blue-800); box-shadow: 0 0 0 3px var(--blue-dim);
-  }
-  .tab[data-exam="ALL"].active  { background:var(--blue-dim); border-color:var(--blue-800); color:var(--blue-800); }
-  .tab[data-exam="JEE"].active  { background:var(--blue-dim); border-color:var(--exam-jee); color:var(--exam-jee); }
-  .tab[data-exam="NEET"].active { background:var(--green-dim); border-color:var(--exam-neet); color:var(--exam-neet); }
-  .tab[data-exam="UPSC"].active { background:var(--red-dim); border-color:var(--exam-upsc); color:var(--exam-upsc); }
-  .tab[data-exam="CAT"].active  { background:rgba(180,83,9,0.08); border-color:var(--exam-cat); color:var(--exam-cat); }
-  .tab[data-exam="SAT"].active  { background:var(--purple-dim); border-color:var(--exam-sat); color:var(--exam-sat); }
-  .tab[data-exam="GK"].active   { background:var(--orange-dim); border-color:var(--exam-gk); color:var(--exam-gk); }
-
-  /* ── Progress ── */
-  .prog-wrap { margin-bottom:22px; }
-  .prog-row {
-    display:flex; justify-content:space-between; align-items:center;
-    margin-bottom:8px;
-  }
-  .prog-label { font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--text-400); letter-spacing:0.08em; }
-  .prog-pct   { font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--blue-700); font-weight:700; }
-  .prog-track { height:4px; background:var(--cream-2); border-radius:99px; overflow:hidden; }
-  .prog-fill {
-    height:100%; width:0; border-radius:99px;
-    background:linear-gradient(90deg, var(--blue-800), var(--purple-500));
-    transition:width 0.55s cubic-bezier(0.4,0,0.2,1);
-    box-shadow: 0 0 8px var(--blue-glow);
-  }
-
-  /* ═══════════════════════════════════════════════════════════
-     QUESTION CARD
-  ═══════════════════════════════════════════════════════════ */
-  .q-card {
-    background:var(--white); border:1px solid var(--border);
-    border-radius:22px; padding:32px;
-    box-shadow: var(--shadow-lg);
-    animation:cardIn 0.38s cubic-bezier(0.4,0,0.2,1);
-    position:relative; overflow:hidden;
-  }
-  /* Accent strip on left for exam color */
-  .q-card::before {
-    content:'';
-    position:absolute; left:0; top:24px; bottom:24px; width:3px;
-    background: var(--card-accent, var(--blue-700));
-    border-radius:0 3px 3px 0;
-  }
-  @keyframes cardIn {
-    from { opacity:0; transform:translateY(18px) scale(0.99); }
-    to   { opacity:1; transform:translateY(0) scale(1); }
-  }
-
-  .q-meta { display:flex; align-items:center; gap:7px; margin-bottom:18px; flex-wrap:wrap; }
-
-  .badge {
-    display:inline-flex; align-items:center;
-    padding:3px 10px; border-radius:7px;
-    font-family:'JetBrains Mono',monospace; font-size:0.62rem;
-    font-weight:500; letter-spacing:0.08em; text-transform:uppercase;
-    border:1px solid; transition:all 0.2s;
-  }
-  .badge-exam {
-    background:var(--blue-dim); border-color:var(--blue-200);
-    color:var(--blue-800);
-  }
-  .badge-subj { background:var(--orange-100); border-color:var(--orange-200); color:var(--orange-700); }
-  .badge-year { background:var(--cream); border-color:var(--border); color:var(--text-300); }
-  .badge-numerical {
-    background:var(--purple-100); border-color:var(--purple-200);
-    color:var(--purple-700); font-weight:700;
-  }
-  .badge-diff { background:transparent; border-color:var(--border); color:var(--text-300); }
-  .badge-diff.Hard   { color:var(--red-700); border-color:rgba(185,28,28,0.25); background:var(--red-dim); }
-  .badge-diff.Medium { color:var(--gold-700); border-color:rgba(180,83,9,0.25); background:rgba(180,83,9,0.08); }
-  .badge-diff.Easy   { color:var(--green-700); border-color:rgba(21,128,61,0.25); background:var(--green-dim); }
-
-  .timer-badge {
-    margin-left:auto; display:flex; align-items:center; gap:5px;
-    font-family:'JetBrains Mono',monospace; font-size:0.8rem; font-weight:700;
-    color:var(--text-400);
-    background:var(--cream); border:1px solid var(--border);
-    border-radius:99px; padding:4px 12px;
-    transition:all 0.3s;
-  }
-  .timer-badge.urgent {
-    color:var(--red-700); background:var(--red-dim);
-    border-color:rgba(185,28,28,0.3);
-    animation:pulse 0.75s ease-in-out infinite alternate;
-  }
-  @keyframes pulse { from{opacity:1} to{opacity:0.55} }
-
-  .q-number {
-    font-family:'JetBrains Mono',monospace; font-size:0.65rem;
-    color:var(--text-300); letter-spacing:0.1em; text-transform:uppercase;
-    margin-bottom:10px;
-  }
-
-  .q-text {
-    font-family:'Playfair Display', serif;
-    font-size:1.25rem; line-height:1.65;
-    color:var(--text-800); margin-bottom:24px;
-  }
-
-  /* ── MCQ Options ── */
-  .options { display:flex; flex-direction:column; gap:10px; }
-
-  .option {
-    display:flex; align-items:flex-start; gap:14px;
-    background:var(--warm-white); border:1.5px solid var(--border);
-    border-radius:14px; padding:14px 18px;
-    cursor:pointer; transition:all 0.18s; user-select:none;
-  }
-  .option:hover:not(.locked) {
-    background:var(--blue-100); border-color:var(--blue-500);
-    transform:translateX(4px);
-    box-shadow: 0 2px 16px rgba(30,58,138,0.1);
-  }
-  .option.selected {
-    background:var(--blue-dim); border-color:var(--blue-700);
-    box-shadow: 0 0 0 3px var(--blue-dim);
-  }
-  .option.correct  { background:var(--green-dim); border-color:var(--green-600); box-shadow: 0 0 0 3px rgba(21,128,61,0.1); }
-  .option.wrong    { background:var(--red-dim); border-color:var(--red-600); }
-  .option.reveal   { background:var(--green-dim); border-color:var(--green-600); opacity:0.75; }
-  .option.locked   { cursor:default; }
-
-  .opt-key {
-    width:30px; height:30px; border-radius:8px; flex-shrink:0;
-    background:var(--cream); border:1.5px solid var(--border-2);
-    display:flex; align-items:center; justify-content:center;
-    font-family:'JetBrains Mono',monospace; font-size:0.72rem; font-weight:700;
-    color:var(--text-400); transition:all 0.18s;
-  }
-  .option.selected .opt-key { background:var(--blue-800); border-color:var(--blue-800); color:#fff; }
-  .option.correct  .opt-key { background:var(--green-700); border-color:var(--green-700); color:#fff; }
-  .option.wrong    .opt-key { background:var(--red-700); border-color:var(--red-700); color:#fff; }
-  .option.reveal   .opt-key { background:var(--green-700); border-color:var(--green-700); color:#fff; }
-  .opt-text { font-size:0.9rem; line-height:1.55; color:var(--text-800); padding-top:4px; }
-
-  /* ── Numerical Input ── */
-  .numerical-wrap {
-    background:var(--warm-white); border:1.5px solid var(--border);
-    border-radius:16px; padding:24px 22px;
-    display:flex; flex-direction:column; gap:14px;
-  }
-  .num-label {
-    font-family:'JetBrains Mono',monospace; font-size:0.68rem;
-    letter-spacing:0.1em; text-transform:uppercase; color:var(--purple-700);
-    display:flex; align-items:center; gap:6px;
-  }
-  .num-input-row { display:flex; align-items:center; gap:12px; }
-  .numerical-input {
-    flex:1; padding:13px 18px; border-radius:12px;
-    border:2px solid var(--border-2); background:var(--white);
-    font-family:'JetBrains Mono',monospace; font-size:1.15rem; font-weight:700;
-    color:var(--text-800); outline:none; transition:all 0.2s;
-    box-shadow: var(--shadow-sm);
-  }
-  .numerical-input:focus {
-    border-color:var(--purple-700);
-    box-shadow: 0 0 0 4px var(--purple-dim);
-  }
-  .numerical-input.correct-input {
-    border-color:var(--green-700); background:var(--green-dim);
-    color:var(--green-700);
-  }
-  .numerical-input.wrong-input {
-    border-color:var(--red-700); background:var(--red-dim);
-    color:var(--red-700);
-  }
-  .num-hint { font-size:0.78rem; color:var(--text-400); }
-  .num-hint span { font-family:'JetBrains Mono',monospace; font-weight:600; color:var(--purple-700); }
-
-  /* ── Explanation ── */
-  .explanation {
-    display:none; margin-top:18px;
-    background:linear-gradient(135deg, var(--blue-100), var(--purple-100));
-    border:1px solid var(--blue-200);
-    border-left:4px solid var(--blue-700);
-    border-radius:0 14px 14px 0; padding:16px 20px;
-    animation:fadeSlide 0.3s ease;
-  }
-  .explanation.show { display:block; }
-  .exp-label {
-    font-family:'JetBrains Mono',monospace; font-size:0.62rem;
-    letter-spacing:0.1em; color:var(--blue-700); text-transform:uppercase;
-    margin-bottom:6px; display:flex; align-items:center; gap:6px; font-weight:700;
-  }
-  .exp-text { font-size:0.87rem; color:var(--text-600); line-height:1.68; }
-  .exp-correct-val {
-    margin-top:8px; font-size:0.82rem; color:var(--green-700);
-    font-family:'JetBrains Mono',monospace; font-weight:700;
-  }
-
-  /* ── Action row ── */
-  .action-row { display:flex; align-items:center; gap:12px; margin-top:24px; flex-wrap:wrap; }
-
-  .btn-submit {
-    flex:1; min-width:130px; padding:14px;
-    background:linear-gradient(135deg, var(--blue-800), var(--blue-700));
-    color:#fff; border:none; border-radius:13px;
-    font-family:'Outfit',sans-serif; font-size:0.92rem; font-weight:700;
-    cursor:pointer; transition:all 0.22s; letter-spacing:0.04em;
-    box-shadow: var(--shadow-blue);
-  }
-  .btn-submit:hover { transform:translateY(-2px); box-shadow: 0 8px 28px rgba(30,58,138,0.28); }
-  .btn-submit:disabled { opacity:0.35; cursor:not-allowed; transform:none; box-shadow:none; }
-
-  .btn-next {
-    flex:1; min-width:130px; padding:14px;
-    background:linear-gradient(135deg, var(--orange-600), var(--orange-500));
-    color:#fff; border:none; border-radius:13px;
-    font-family:'Outfit',sans-serif; font-size:0.92rem; font-weight:700;
-    cursor:pointer; transition:all 0.22s; letter-spacing:0.04em;
-    box-shadow: var(--shadow-orange);
-  }
-  .btn-next:hover { transform:translateY(-2px); box-shadow: 0 8px 28px rgba(234,88,12,0.3); }
-
-  .btn-skip {
-    padding:14px 20px;
-    background:var(--warm-white); border:1.5px solid var(--border-2);
-    color:var(--text-400); border-radius:13px;
-    font-family:'Outfit',sans-serif; font-size:0.82rem; font-weight:500;
-    cursor:pointer; transition:all 0.2s;
-  }
-  .btn-skip:hover { border-color:var(--text-400); color:var(--text-600); background:var(--cream); }
-
-  .q-counter {
-    font-family:'JetBrains Mono',monospace; font-size:0.65rem; color:var(--text-300);
-    text-align:center; margin-top:16px; letter-spacing:0.06em;
-  }
-
-  /* ═══════════════════════════════════════════════════════════
-     RESULTS
-  ═══════════════════════════════════════════════════════════ */
-  .results {
-    display:none; background:var(--white); border:1px solid var(--border);
-    border-radius:24px; padding:48px 32px; text-align:center;
-    box-shadow: var(--shadow-xl);
-    animation:cardIn 0.4s ease;
-  }
-  .results.show { display:block; }
-
-  .res-emoji { font-size:4.5rem; margin-bottom:14px; animation:bounce 0.6s ease; display:block; }
-  @keyframes bounce { 0%,100%{transform:scale(1)} 50%{transform:scale(1.3)} }
-
-  .res-title {
-    font-family:'Playfair Display',serif; font-size:2.2rem; font-weight:700;
-    color:var(--blue-800); margin-bottom:6px;
-  }
-  .res-sub { font-size:0.95rem; color:var(--text-400); margin-bottom:32px; }
-
-  .res-stats-row {
-    display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-bottom:32px;
-  }
-  .res-stat {
-    background:var(--cream); border:1px solid var(--border);
-    border-radius:14px; padding:16px 24px; text-align:center;
-    min-width:100px;
-  }
-  .res-stat-val {
-    font-family:'JetBrains Mono',monospace; font-size:1.6rem; font-weight:700;
-    color:var(--blue-800); display:block;
-  }
-  .res-stat-lbl { font-size:0.72rem; color:var(--text-400); margin-top:3px; text-transform:uppercase; letter-spacing:0.08em; }
-
-  /* Ring */
-  .ring-wrap { position:relative; width:140px; height:140px; margin:0 auto 32px; }
-  .ring-svg { width:140px; height:140px; transform:rotate(-90deg); }
-  .ring-bg  { fill:none; stroke:var(--cream-2); stroke-width:9; }
-  .ring-arc {
-    fill:none; stroke-width:9; stroke-linecap:round;
-    stroke:var(--blue-700);
-    filter:drop-shadow(0 0 6px rgba(29,78,216,0.3));
-    stroke-dasharray:346;
-    stroke-dashoffset:calc(346 - 346 * var(--pct, 0) / 100);
-    transition:stroke-dashoffset 1.3s cubic-bezier(0.4,0,0.2,1);
-  }
-  .ring-val {
-    position:absolute; inset:0; display:flex; flex-direction:column;
-    align-items:center; justify-content:center;
-    font-family:'JetBrains Mono',monospace;
-  }
-  .ring-num { font-size:1.6rem; font-weight:700; color:var(--text-800); line-height:1; }
-  .ring-lbl { font-size:0.58rem; color:var(--text-300); letter-spacing:0.12em; text-transform:uppercase; margin-top:3px; }
-
-  .btn-restart {
-    display:inline-flex; align-items:center; gap:9px;
-    background:linear-gradient(135deg,var(--blue-800),var(--blue-700));
-    color:#fff; border:none; border-radius:14px;
-    padding:15px 36px; font-family:'Outfit',sans-serif;
-    font-size:0.95rem; font-weight:700; cursor:pointer;
-    transition:all 0.22s; box-shadow: var(--shadow-blue);
-    margin-right:12px;
-  }
-  .btn-restart:hover { transform:translateY(-2px); box-shadow: 0 8px 30px rgba(30,58,138,0.3); }
-
-  .btn-download-results {
-    display:inline-flex; align-items:center; gap:9px;
-    background:var(--orange-100); border:1.5px solid var(--orange-200);
-    color:var(--orange-700); border-radius:14px;
-    padding:15px 24px; font-family:'Outfit',sans-serif;
-    font-size:0.92rem; font-weight:600; cursor:pointer;
-    transition:all 0.22s;
-  }
-  .btn-download-results:hover { background:var(--orange-dim); border-color:var(--orange-500); transform:translateY(-1px); }
-
-  /* ═══════════════════════════════════════════════════════════
-     MUSIC PLAYER
-  ═══════════════════════════════════════════════════════════ */
-  .player {
-    position:fixed; bottom:0; left:0; right:0; z-index:100;
-    background:rgba(250,246,239,0.95);
-    border-top:1px solid var(--border-2);
-    backdrop-filter:blur(20px) saturate(1.5);
-    padding:12px 24px;
-    display:flex; align-items:center; gap:16px; flex-wrap:wrap;
-  }
-
-  .disc-wrap { position:relative; flex-shrink:0; }
-  .disc {
-    width:44px; height:44px; border-radius:50%;
-    background:conic-gradient(from 0deg, var(--blue-800), var(--purple-700), var(--orange-600), var(--blue-800));
-    display:flex; align-items:center; justify-content:center;
-    font-size:17px;
-    box-shadow: 0 2px 14px rgba(30,58,138,0.2);
-    transition:all 0.3s;
-  }
-  .disc.playing { animation:spin 4s linear infinite; }
-  .disc-hole {
-    position:absolute; top:50%; left:50%;
-    width:14px; height:14px; border-radius:50%;
-    background:var(--cream); transform:translate(-50%,-50%);
-  }
-
-  .track-info { flex:1; min-width:100px; }
-  .track-name { font-size:0.82rem; font-weight:600; color:var(--text-800); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:200px; }
-  .track-src  { font-family:'JetBrains Mono',monospace; font-size:0.58rem; color:var(--text-300); }
-
-  .eq-bars { display:flex; align-items:flex-end; gap:2px; height:16px; }
-  .eq-bar  { width:3px; background:var(--blue-700); border-radius:2px; transform:scaleY(0.15); transform-origin:bottom; }
-  .eq-bars.active .eq-bar:nth-child(1) { animation:eq 0.7s 0.0s ease-in-out infinite alternate; }
-  .eq-bars.active .eq-bar:nth-child(2) { animation:eq 0.5s 0.1s ease-in-out infinite alternate; }
-  .eq-bars.active .eq-bar:nth-child(3) { animation:eq 0.8s 0.2s ease-in-out infinite alternate; }
-  .eq-bars.active .eq-bar:nth-child(4) { animation:eq 0.6s 0.0s ease-in-out infinite alternate; }
-  .eq-bars.active .eq-bar:nth-child(5) { animation:eq 0.9s 0.15s ease-in-out infinite alternate; }
-  @keyframes eq { from{transform:scaleY(0.15)} to{transform:scaleY(1)} }
-
-  .player-controls { display:flex; align-items:center; gap:8px; }
-  .ctrl-btn {
-    width:34px; height:34px; border-radius:50%;
-    background:var(--cream); border:1.5px solid var(--border-2);
-    color:var(--text-400); cursor:pointer; font-size:13px;
-    display:flex; align-items:center; justify-content:center; transition:all 0.2s;
-  }
-  .ctrl-btn:hover { border-color:var(--blue-700); color:var(--blue-700); }
-  .ctrl-btn.play-btn {
-    width:40px; height:40px;
-    background:linear-gradient(135deg,var(--blue-800),var(--blue-700));
-    border:none; color:#fff; font-size:14px;
-    box-shadow: var(--shadow-blue);
-  }
-  .ctrl-btn.play-btn:hover { transform:scale(1.1); }
-
-  .vol-wrap { display:flex; align-items:center; gap:8px; }
-  .vol-icon { font-size:13px; color:var(--text-300); }
-  .vol-slider {
-    -webkit-appearance:none; width:80px; height:3px;
-    background:var(--cream-2); border-radius:99px; outline:none; cursor:pointer;
-  }
-  .vol-slider::-webkit-slider-thumb {
-    -webkit-appearance:none; width:12px; height:12px; border-radius:50%;
-    background:var(--blue-700); cursor:pointer;
-    box-shadow: 0 0 6px var(--blue-glow);
-  }
-
-  .music-status {
-    font-family:'JetBrains Mono',monospace; font-size:0.58rem; letter-spacing:0.1em;
-    color:var(--blue-700); background:var(--blue-dim);
-    border:1px solid var(--blue-200); border-radius:5px; padding:2px 7px;
-  }
-  .music-status.synth { color:var(--purple-700); background:var(--purple-dim); border-color:var(--purple-200); }
-
-  /* ── Toast ── */
-  .toast {
-    position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
-    background:var(--blue-950); border:1px solid rgba(255,255,255,0.1);
-    color:#fff; padding:11px 24px; border-radius:99px;
-    font-size:0.8rem; z-index:200; white-space:nowrap;
-    animation:toastIn 0.3s ease, toastOut 0.4s 3.5s ease forwards;
-    box-shadow: 0 4px 24px rgba(13,29,82,0.35);
-  }
-  @keyframes toastIn  { from{opacity:0;transform:translate(-50%,10px)} to{opacity:1;transform:translate(-50%,0)} }
-  @keyframes toastOut { to  {opacity:0;transform:translate(-50%,-8px)} }
-
-  /* ── Confetti ── */
-  .confetti-piece {
-    position:fixed; width:8px; height:8px;
-    pointer-events:none; z-index:9999;
-    animation:confetti-fall 2.5s ease-in forwards;
-  }
-  @keyframes confetti-fall {
-    0%   { transform:translateY(-20px) rotate(0deg); opacity:1; }
-    100% { transform:translateY(110vh) rotate(720deg); opacity:0; }
-  }
-
-  /* ── Download Modal ── */
-  .modal-overlay {
-    display:none; position:fixed; inset:0; z-index:500;
-    background:rgba(12,10,9,0.55); backdrop-filter:blur(6px);
-    align-items:center; justify-content:center;
-  }
-  .modal-overlay.open { display:flex; }
-  .modal {
-    background:var(--white); border-radius:22px;
-    padding:36px; max-width:440px; width:90%;
-    box-shadow: var(--shadow-xl);
-    animation:cardIn 0.3s ease;
-  }
-  .modal-title {
-    font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:700;
-    color:var(--blue-800); margin-bottom:6px;
-  }
-  .modal-sub { font-size:0.85rem; color:var(--text-400); margin-bottom:24px; }
-  .modal-options { display:flex; flex-direction:column; gap:10px; margin-bottom:24px; }
-  .modal-option {
-    display:flex; align-items:center; gap:14px;
-    padding:16px 18px; border-radius:14px;
-    border:1.5px solid var(--border); background:var(--warm-white);
-    cursor:pointer; transition:all 0.18s; text-align:left;
-  }
-  .modal-option:hover { border-color:var(--blue-500); background:var(--blue-100); }
-  .modal-option-icon { font-size:1.8rem; flex-shrink:0; }
-  .modal-option-title { font-size:0.9rem; font-weight:600; color:var(--text-800); }
-  .modal-option-desc { font-size:0.75rem; color:var(--text-400); margin-top:2px; }
-  .modal-close {
-    width:100%; padding:13px; background:var(--cream);
-    border:1.5px solid var(--border-2); border-radius:12px;
-    color:var(--text-600); font-family:'Outfit',sans-serif; font-size:0.88rem; font-weight:600;
-    cursor:pointer; transition:all 0.18s;
-  }
-  .modal-close:hover { background:var(--cream-2); }
-
-  /* ── Responsive ── */
-  @media (max-width:600px) {
-    .header { padding:16px 18px; }
-    .logo-text { font-size:1.5rem; }
-    .q-card { padding:22px 18px; }
-    .q-text { font-size:1.1rem; }
-    .player { gap:10px; }
-    .vol-wrap { display:none; }
-    .track-name { max-width:110px; }
-    .res-stats-row { gap:10px; }
-    .res-stat { padding:12px 16px; min-width:80px; }
-  }
-
-  /* ═══════════════════════════════════════════════════════════
-     RESOURCE AD CARD — Contextual Book Recommendation
-     Designed to blend elegantly with the Luxury Academic theme.
-  ═══════════════════════════════════════════════════════════ */
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(14px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  #adContainer {
-    /* Reserve no space until populated */
-    min-height: 0;
-  }
-
-  .resource-ad-card {
-    /* Glass-morphism surface on top of the card's white bg */
-    background: linear-gradient(
-      135deg,
-      rgba(243, 235, 216, 0.72) 0%,     /* --cream-2 tinted */
-      rgba(255, 253, 249, 0.82) 100%     /* --warm-white tinted */
-    );
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-
-    border: 1px solid rgba(13, 29, 82, 0.13);  /* --blue-950 @ 13% */
-    border-radius: 16px;
-    padding: 16px 20px;
-    margin-top: 18px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-
-    box-shadow:
-      0 2px 12px rgba(13, 29, 82, 0.07),
-      inset 0 1px 0 rgba(255, 255, 255, 0.65);
-
-    animation: fadeInUp 0.52s cubic-bezier(0.4, 0, 0.2, 1) both;
-    animation-delay: 0.9s;   /* graceful 0.9 s delay after card loads */
-    opacity: 0;               /* start hidden; animation fills to 1 */
-
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* Subtle warm stripe accent on the left edge */
-  .resource-ad-card::before {
-    content: '';
-    position: absolute;
-    left: 0; top: 16px; bottom: 16px;
-    width: 3px;
-    background: linear-gradient(180deg, var(--orange-500), var(--gold-500));
-    border-radius: 0 3px 3px 0;
-  }
-
-  /* Faint decorative book-shelf watermark */
-  .resource-ad-card::after {
-    content: '📚';
-    position: absolute;
-    right: -6px; bottom: -8px;
-    font-size: 4.5rem;
-    opacity: 0.06;
-    pointer-events: none;
-    user-select: none;
-    filter: grayscale(1);
-  }
-
-  /* "Curated for you" pill label */
-  .ad-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.56rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--gold-700);
-    background: rgba(217, 119, 6, 0.09);
-    border: 1px solid rgba(217, 119, 6, 0.22);
-    border-radius: 99px;
-    padding: 3px 9px;
-    margin-bottom: 5px;
-    font-weight: 700;
-  }
-
-  /* Book cover thumbnail */
-  .ad-cover {
-    width: 48px;
-    height: 62px;
-    border-radius: 6px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.9rem;
-    background: linear-gradient(135deg, var(--blue-950), var(--blue-800));
-    box-shadow: 2px 3px 12px rgba(13, 29, 82, 0.22);
-    position: relative;
-    /* spine highlight */
-  }
-  .ad-cover::after {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 6px;
-    background: rgba(0,0,0,0.18);
-    border-radius: 6px 0 0 6px;
-  }
-
-  /* Text block */
-  .ad-body {
-    flex: 1;
-    min-width: 0;
-  }
-  .ad-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 0.97rem;
-    font-weight: 700;
-    color: var(--text-800);
-    line-height: 1.35;
-    margin-bottom: 3px;
-    /* truncate gracefully on very small screens */
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-  .ad-author {
-    font-size: 0.72rem;
-    color: var(--text-400);
-    font-family: 'JetBrains Mono', monospace;
-    margin-bottom: 2px;
-  }
-  .ad-why {
-    font-size: 0.73rem;
-    color: var(--text-600);
-    line-height: 1.5;
-    font-style: italic;
-  }
-
-  /* Amazon CTA button */
-  .ad-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    background: linear-gradient(135deg, var(--orange-600), var(--orange-500));
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 18px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    white-space: nowrap;
-    flex-shrink: 0;
-    text-decoration: none;
-    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow:
-      0 3px 14px rgba(234, 88, 12, 0.32),
-      0 0 0 0 rgba(234, 88, 12, 0);
-  }
-  .ad-cta:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow:
-      0 6px 22px rgba(234, 88, 12, 0.42),
-      0 0 0 4px rgba(234, 88, 12, 0.12);
-  }
-  .ad-cta:active {
-    transform: translateY(0) scale(0.98);
-  }
-
-  /* Dismiss micro-button */
-  .ad-dismiss {
-    position: absolute;
-    top: 8px; right: 10px;
-    background: none; border: none;
-    font-size: 0.72rem;
-    color: var(--text-300);
-    cursor: pointer;
-    padding: 2px 5px;
-    border-radius: 4px;
-    transition: color 0.15s;
-    line-height: 1;
-  }
-  .ad-dismiss:hover { color: var(--text-600); }
-
-  /* ── Ad responsive tweaks ── */
-  @media (max-width: 600px) {
-    .resource-ad-card {
-      flex-direction: row;
-      padding: 13px 14px 13px 16px;
-      gap: 12px;
-    }
-    .ad-cover { width: 40px; height: 52px; font-size: 1.5rem; }
-    .ad-cta   { width: 100%; justify-content: center; margin-top: 10px; }
-    .ad-body  { font-size: 0.9rem; }
-    /* Stack CTA below text on narrow screens */
-    .resource-ad-card {
-      flex-wrap: wrap;
-    }
-  }
-
-  @media (max-width: 400px) {
-    .ad-title  { font-size: 0.88rem; }
-    .ad-why    { display: none; }   /* trim on very small screens */
-  }
-  </style>
+  <link rel="stylesheet" href="/static/css/style.css" />
 </head>
 <body>
   <!-- Ambient orbs -->
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
   <div class="orb orb-3"></div>
+
+  <!-- Hidden audio element -->
   <audio id="audioEl" preload="none"></audio>
 
-  <!-- Download Modal -->
-  <div class="modal-overlay" id="downloadModal">
+  <!-- ══════════════════════════════════════════════════
+       DOWNLOAD MODAL
+  ══════════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="downloadModal" role="dialog" aria-modal="true" aria-label="Download questions">
     <div class="modal">
       <div class="modal-title">📥 Download Questions</div>
       <div class="modal-sub">Export your current question set in your preferred format.</div>
@@ -1011,7 +40,7 @@
           <span class="modal-option-icon">🖨️</span>
           <div>
             <div class="modal-option-title">Print / Save as PDF</div>
-            <div class="modal-option-desc">Opens printable question paper</div>
+            <div class="modal-option-desc">Printable question paper — share on WhatsApp first</div>
           </div>
         </button>
         <button class="modal-option" onclick="downloadCSV()">
@@ -1026,54 +55,104 @@
     </div>
   </div>
 
+  <!-- ══════════════════════════════════════════════════
+       WHATSAPP PDF GATE MODAL
+  ══════════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="waModal" role="dialog" aria-modal="true" aria-label="Share on WhatsApp">
+    <div class="modal wa-modal">
+      <div class="wa-icon">📲</div>
+      <div class="modal-title">Share to Unlock PDF</div>
+      <div class="modal-sub">A WhatsApp share window has opened. After sharing, your PDF will be ready to download.</div>
+      <button class="fetch-btn" id="waContinueBtn" onclick="onWaContinue()" disabled style="width:100%;justify-content:center">
+        Waiting 4 seconds…
+      </button>
+      <div class="wa-progress" style="margin-top:16px">
+        <div class="wa-progress-fill" id="waProgressFill"></div>
+      </div>
+      <button class="modal-close" onclick="closeWaModal()" style="margin-top:12px">
+        Cancel
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       BOOKMARKS PANEL
+  ══════════════════════════════════════════════════ -->
+  <div class="bookmarks-panel" id="bookmarksPanel">
+    <div class="bookmarks-header">
+      <div class="bookmarks-title">🔖 Your Bookmarks</div>
+      <button class="btn-close-bookmarks" onclick="$('bookmarksPanel').classList.remove('show')">✕</button>
+    </div>
+    <div id="bookmarksList"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       MAIN WRAPPER
+  ══════════════════════════════════════════════════ -->
   <div class="wrap">
-    <!-- ── HEADER ── -->
+
+    <!-- ── HEADER ─────────────────────────────────── -->
     <header class="header">
       <div class="logo">
-        <div class="logo-icon">🎯</div>
+        <div class="logo-icon" aria-hidden="true">🎯</div>
         <div>
           <div class="logo-text">QuizForge</div>
           <span class="logo-sub">Premium PYQ Engine · v3.0</span>
         </div>
       </div>
       <div class="header-right">
-        <div class="stat-pill" id="qCountPill">
+        <div class="stat-pill" title="Total questions loaded">
           <span>Questions</span>
           <span class="stat-val" id="totalQCount">—</span>
         </div>
-        <div class="stat-pill">
+        <div class="stat-pill" title="Current session score">
           <span>Score</span>
           <span class="stat-val" id="scoreVal">0</span>
         </div>
-        <div class="stat-pill">
+        <div class="stat-pill" title="Correct answer streak">
           <span>🔥 Streak</span>
           <span class="stat-val stat-streak" id="streakVal">0</span>
         </div>
-        <button class="btn-download-hdr" onclick="openDownload()" id="downloadHdrBtn" style="display:none">
+        <button class="btn-dark-toggle" onclick="toggleDark()" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button class="btn-download-hdr" onclick="openDownload()" id="downloadHdrBtn" style="display:none" aria-label="Download questions">
           ⬇ Download
         </button>
       </div>
     </header>
 
-    <!-- brand strip -->
+    <!-- ── BRAND STRIP ─────────────────────────────── -->
     <div class="brand-strip">
       <div class="brand-tagline">
-        <span class="live-dot"></span>
+        <span class="live-dot" aria-hidden="true"></span>
         <span id="sourceLabel">Connecting to live question banks…</span>
       </div>
     </div>
 
     <!-- ══════════════════════════════════════
-         LOADING STATE
+         SSE PROGRESS PANEL
     ══════════════════════════════════════ -->
-    <div class="loading-screen show" id="loadingScreen">
-      <div class="loader-ring" id="loaderRing"></div>
+    <div class="sse-progress" id="sseProgress" role="status" aria-live="polite">
+      <div class="sse-label">
+        <span id="sseMsg">Initialising scrape…</span>
+        <span class="sse-pct" id="ssePct">0%</span>
+      </div>
+      <div class="sse-bar-track">
+        <div class="sse-bar-fill" id="sseBarFill"></div>
+      </div>
+      <div class="sse-log" id="sseLog"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         LOADING SCREEN
+    ══════════════════════════════════════ -->
+    <div class="loading-screen show" id="loadingScreen" role="status" aria-live="polite">
+      <div class="loader-ring" id="loaderRing" aria-label="Loading"></div>
       <div>
         <div class="loading-title">Initialising QuizForge</div>
         <p class="loading-sub">Checking for cached questions…</p>
       </div>
-      <div class="loading-log" id="loadLog"></div>
-      <button class="fetch-btn" id="fetchBtn" style="display:none" onclick="startScrape()">
+      <div class="loading-log" id="loadLog" aria-label="Loading log"></div>
+      <button class="fetch-btn" id="fetchBtn" style="display:none" onclick="startScrape()" aria-label="Fetch live PYQ questions">
         🚀 &nbsp;Fetch Live PYQ Questions
       </button>
     </div>
@@ -1081,64 +160,111 @@
     <!-- ══════════════════════════════════════
          QUIZ AREA
     ══════════════════════════════════════ -->
-    <div class="quiz-area" id="quizArea">
+    <div class="quiz-area" id="quizArea" aria-label="Quiz area">
 
-      <!-- source bar -->
+      <!-- Source bar -->
       <div class="source-bar">
         <div class="source-tag">
-          <span class="live-dot"></span>
-          <span id="sourceLabelQuiz">LIVE — OpenTDB + IndiaBix</span>
+          <span class="live-dot" aria-hidden="true"></span>
+          <span id="sourceLabelQuiz">LIVE — OpenTDB + JEE Archive</span>
         </div>
-        <button class="refresh-btn" onclick="confirmRefresh()">↻ &nbsp;Refresh Questions</button>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <button class="refresh-btn" onclick="showBookmarks()" aria-label="Show bookmarks">🔖 Bookmarks</button>
+          <button class="refresh-btn" onclick="confirmRefresh()" aria-label="Refresh questions">↻ Refresh</button>
+        </div>
       </div>
 
-      <!-- exam tabs -->
-      <div class="tabs-section">
-        <div class="tabs-label">Select Exam</div>
-        <div class="tabs-wrap" id="tabsWrap"></div>
+      <!-- Filter row: exam tabs + chapter dropdown + timer mode -->
+      <div class="filter-row">
+        <div class="filter-group">
+          <div class="filter-label">Exam</div>
+          <div class="tabs-wrap" id="tabsWrap" role="tablist" aria-label="Exam filter"></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">Chapter</div>
+          <select class="chapter-select" id="chapterSelect" onchange="onChapterChange()" aria-label="Chapter filter">
+            <option value="ALL">All Chapters</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">Timer Mode</div>
+          <select class="timer-select" id="timerModeSelect" onchange="onTimerModeChange()" aria-label="Timer mode">
+            <option value="0">Off</option>
+            <option value="10">10 min</option>
+            <option value="30">30 min</option>
+            <option value="60">60 min</option>
+          </select>
+        </div>
       </div>
 
-      <!-- progress -->
+      <!-- Timer mode bar (shown only when timer mode is active) -->
+      <div class="timer-mode-bar" id="timerModeBar" role="timer" aria-live="polite">
+        <div>
+          <div class="timer-mode-label" id="timerModeLabel">Timer Mode</div>
+          <div class="timer-mode-countdown" id="timerModeCountdown">00:00</div>
+        </div>
+        <div style="font-size:0.78rem;color:var(--blue-700)">Complete as many questions as you can!</div>
+      </div>
+
+      <!-- Progress bar -->
       <div class="prog-wrap">
         <div class="prog-row">
           <span class="prog-label" id="progLabel">Q 0 / 0</span>
-          <span class="prog-pct" id="progPct">0%</span>
+          <span class="prog-pct"  id="progPct">0%</span>
         </div>
         <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
       </div>
 
-      <!-- question card -->
-      <div id="qCard" class="q-card" style="display:none">
-        <div class="q-number" id="qNumber"></div>
-        <div class="q-meta" id="qMeta"></div>
-        <div class="q-text" id="qText"></div>
-        <!-- MCQ options OR numerical input injected here -->
-        <div id="answerArea"></div>
+      <!-- Progress chart (last 10 answers) -->
+      <div class="progress-chart" id="progressChart">
+        <div class="chart-title">📈 Last 10 Answers</div>
+        <div class="chart-bars" id="chartBars"></div>
+      </div>
 
-        <!-- ── Contextual Book Recommendation Ad ── -->
+      <!-- ── QUESTION CARD ──────────────────────── -->
+      <div id="qCard" class="q-card" style="display:none" role="main" aria-label="Question">
+        <div class="q-number" id="qNumber"></div>
+        <div class="q-meta"   id="qMeta"   aria-label="Question metadata"></div>
+        <div class="q-text"   id="qText"   role="heading" aria-level="2"></div>
+
+        <!-- Answer area (MCQ options or numerical input injected here) -->
+        <div id="answerArea" aria-label="Answer area"></div>
+
+        <!-- Contextual book recommendation -->
         <div id="adContainer"></div>
 
-        <div class="explanation" id="expBox">
+        <!-- Explanation (shown after answer) -->
+        <div class="explanation" id="expBox" aria-live="polite">
           <div class="exp-label">💡 Explanation</div>
           <div class="exp-text" id="expText"></div>
           <div class="exp-correct-val" id="expCorrectVal" style="display:none"></div>
         </div>
+
+        <!-- Action buttons -->
         <div class="action-row">
-          <button class="btn-submit" id="btnSubmit" disabled onclick="submitAnswer()">✓ &nbsp;Check Answer</button>
-          <button class="btn-next"   id="btnNext"   style="display:none" onclick="nextQuestion()">Next →</button>
-          <button class="btn-skip"   id="btnSkip"   onclick="skipQuestion()">Skip</button>
+          <button class="btn-submit" id="btnSubmit" disabled onclick="submitAnswer()" aria-label="Check answer">
+            ✓ &nbsp;Check Answer
+          </button>
+          <button class="btn-next" id="btnNext" style="display:none" onclick="nextQuestion()" aria-label="Next question">
+            Next →
+          </button>
+          <button class="btn-skip" id="btnSkip" onclick="skipQuestion()" aria-label="Skip question">
+            Skip
+          </button>
         </div>
-        <div class="q-counter" id="qCounter"></div>
+
+        <div class="q-counter" id="qCounter" aria-label="Question counter"></div>
       </div>
 
-      <!-- results -->
-      <div class="results" id="resultsBox">
-        <span class="res-emoji" id="resEmoji"></span>
+      <!-- ── RESULTS ─────────────────────────────── -->
+      <div class="results" id="resultsBox" role="region" aria-label="Quiz results">
+        <span class="res-emoji" id="resEmoji" aria-hidden="true"></span>
         <div class="res-title" id="resTitle"></div>
         <div class="res-sub"   id="resSub"></div>
-        <div class="ring-wrap">
-          <svg class="ring-svg" viewBox="0 0 120 120">
-            <circle class="ring-bg" cx="60" cy="60" r="55"/>
+
+        <div class="ring-wrap" aria-hidden="true">
+          <svg class="ring-svg" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="ring-bg"  cx="60" cy="60" r="55"/>
             <circle class="ring-arc" id="ringArc" cx="60" cy="60" r="55"/>
           </svg>
           <div class="ring-val">
@@ -1146,889 +272,50 @@
             <div class="ring-lbl">Correct</div>
           </div>
         </div>
+
         <div class="res-stats-row" id="resStatsRow"></div>
+
         <div>
           <button class="btn-restart" onclick="restartQuiz()">↺ &nbsp;Play Again</button>
-          <button class="btn-download-results" onclick="openDownload()">⬇ Download Questions</button>
+          <button class="btn-download-results" onclick="openDownload()">⬇ Download</button>
         </div>
       </div>
-    </div>
-  </div>
+
+    </div><!-- /quiz-area -->
+  </div><!-- /wrap -->
 
   <!-- ══════════════════════════════════════
-       MUSIC PLAYER
+       MUSIC PLAYER  (fixed bottom)
   ══════════════════════════════════════ -->
-  <div class="player">
+  <div class="player" role="complementary" aria-label="Music player">
     <div class="disc-wrap">
-      <div class="disc" id="disc"><span class="disc-emoji">🎵</span></div>
-      <div class="disc-hole"></div>
+      <div class="disc" id="disc" aria-hidden="true"><span class="disc-emoji">🎵</span></div>
+      <div class="disc-hole" aria-hidden="true"></div>
     </div>
     <div class="track-info">
       <div class="track-name" id="trackName">Lo-Fi Study Beats</div>
       <div class="track-src"  id="trackSrc">Select to play</div>
     </div>
-    <div class="eq-bars" id="eqBars">
+    <div class="eq-bars" id="eqBars" aria-hidden="true">
       <div class="eq-bar"></div><div class="eq-bar"></div>
       <div class="eq-bar"></div><div class="eq-bar"></div>
       <div class="eq-bar"></div>
     </div>
     <div class="player-controls">
-      <button class="ctrl-btn" onclick="prevTrack()" title="Previous">⏮</button>
-      <button class="ctrl-btn play-btn" id="btnPlay" onclick="togglePlay()" title="Play/Pause">▶</button>
-      <button class="ctrl-btn" onclick="nextTrack()" title="Next">⏭</button>
+      <button class="ctrl-btn" onclick="prevTrack()" title="Previous" aria-label="Previous track">⏮</button>
+      <button class="ctrl-btn play-btn" id="btnPlay" onclick="togglePlay()" title="Play / Pause" aria-label="Play or pause">▶</button>
+      <button class="ctrl-btn" onclick="nextTrack()" title="Next" aria-label="Next track">⏭</button>
     </div>
-    <div class="vol-wrap">
-      <span class="vol-icon">🔊</span>
-      <input class="vol-slider" type="range" id="volSlider" min="0" max="100" value="50" oninput="setVol(this.value)" />
+    <div class="vol-wrap" aria-label="Volume control">
+      <span class="vol-icon" aria-hidden="true">🔊</span>
+      <input class="vol-slider" type="range" id="volSlider"
+             min="0" max="100" value="50"
+             oninput="setVol(this.value)"
+             aria-label="Volume" />
     </div>
     <span class="music-status" id="musicStatus">READY</span>
   </div>
 
-  <script>
-  /* ═══════════════════════════════════════════════════════════
-     JEE NUMERICAL QUESTION BANK (built-in)
-  ═══════════════════════════════════════════════════════════ */
-  const JEE_NUMERICALS = [
-    // ── PHYSICS ──
-    { question:"A ball is thrown vertically upward with speed 20 m/s. What is the maximum height reached? (Take g = 10 m/s²)", numericalAnswer:20, unit:"m", subject:"JEE — Physics · Mechanics", exam:"JEE", difficulty:"Easy", year:"2023", type:"numerical", source:"JEE Archive", explanation:"Using v² = u² − 2gh, at maximum height v = 0: 0 = 400 − 20h → h = 20 m" },
-    { question:"A body of mass 4 kg moves with velocity 5 m/s. Calculate its kinetic energy (in Joules).", numericalAnswer:50, unit:"J", subject:"JEE — Physics · Mechanics", exam:"JEE", difficulty:"Easy", year:"2022", type:"numerical", source:"JEE Archive", explanation:"KE = ½mv² = ½ × 4 × 25 = 50 J" },
-    { question:"A particle moves in a circle of radius 2 m at constant speed 6 m/s. What is the centripetal acceleration (m/s²)?", numericalAnswer:18, unit:"m/s²", subject:"JEE — Physics · Circular Motion", exam:"JEE", difficulty:"Medium", year:"2021", type:"numerical", source:"JEE Archive", explanation:"Centripetal acceleration a = v²/r = 36/2 = 18 m/s²" },
-    { question:"A wave has frequency 50 Hz and wavelength 4 m. What is its wave speed (m/s)?", numericalAnswer:200, unit:"m/s", subject:"JEE — Physics · Waves", exam:"JEE", difficulty:"Easy", year:"2024", type:"numerical", source:"JEE Archive", explanation:"Wave speed v = fλ = 50 × 4 = 200 m/s" },
-    { question:"A 6 Ω and 3 Ω resistor are connected in parallel. What is the equivalent resistance (Ω)?", numericalAnswer:2, unit:"Ω", subject:"JEE — Physics · Electricity", exam:"JEE", difficulty:"Easy", year:"2023", type:"numerical", source:"JEE Archive", explanation:"1/R = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 → R = 2 Ω" },
-    { question:"A force of 10 N displaces an object 5 m at an angle of 60° to the force direction. Work done (J) = ?", numericalAnswer:25, unit:"J", subject:"JEE — Physics · Work & Energy", exam:"JEE", difficulty:"Medium", year:"2022", type:"numerical", source:"JEE Archive", explanation:"W = Fd·cosθ = 10 × 5 × cos60° = 10 × 5 × 0.5 = 25 J" },
-    { question:"A projectile is launched at 45° with speed 10√2 m/s. What is the horizontal range (m)? (g = 10 m/s²)", numericalAnswer:20, unit:"m", subject:"JEE — Physics · Projectile Motion", exam:"JEE", difficulty:"Medium", year:"2020", type:"numerical", source:"JEE Archive", explanation:"R = v²sin2θ/g = (10√2)² × sin90° / 10 = 200/10 = 20 m" },
-    { question:"The resistance of a wire is 8 Ω. A voltage of 24 V is applied across it. What is the current (A)?", numericalAnswer:3, unit:"A", subject:"JEE — Physics · Electricity", exam:"JEE", difficulty:"Easy", year:"2024", type:"numerical", source:"JEE Archive", explanation:"By Ohm's Law: I = V/R = 24/8 = 3 A" },
-    // ── CHEMISTRY ──
-    { question:"How many moles are present in 36 g of water? (Molar mass of H₂O = 18 g/mol)", numericalAnswer:2, unit:"mol", subject:"JEE — Chemistry · Mole Concept", exam:"JEE", difficulty:"Easy", year:"2023", type:"numerical", source:"JEE Archive", explanation:"n = mass/molar mass = 36/18 = 2 moles" },
-    { question:"What is the pH of a 0.001 M HCl solution? (Assume complete dissociation)", numericalAnswer:3, unit:"", subject:"JEE — Chemistry · Ionic Equilibrium", exam:"JEE", difficulty:"Easy", year:"2022", type:"numerical", source:"JEE Archive", explanation:"[H⁺] = 0.001 = 10⁻³ M → pH = −log[H⁺] = 3" },
-    { question:"At STP, what is the volume (in litres) occupied by 2 moles of an ideal gas?", numericalAnswer:44.8, unit:"L", subject:"JEE — Chemistry · Gaseous State", exam:"JEE", difficulty:"Easy", year:"2021", type:"numerical", source:"JEE Archive", explanation:"At STP, 1 mole of ideal gas = 22.4 L → 2 moles = 44.8 L" },
-    { question:"The atomic number of Carbon is? (Enter the numerical value)", numericalAnswer:6, unit:"", subject:"JEE — Chemistry · Atomic Structure", exam:"JEE", difficulty:"Easy", year:"2024", type:"numerical", source:"JEE Archive", explanation:"Carbon (C) has atomic number 6, meaning 6 protons in its nucleus." },
-    // ── MATHEMATICS ──
-    { question:"If f(x) = 3x² + 2x, find f'(x) at x = 2.", numericalAnswer:14, unit:"", subject:"JEE — Mathematics · Calculus", exam:"JEE", difficulty:"Easy", year:"2023", type:"numerical", source:"JEE Archive", explanation:"f'(x) = 6x + 2. At x = 2: f'(2) = 12 + 2 = 14" },
-    { question:"Evaluate the definite integral: ∫₀² 2x dx", numericalAnswer:4, unit:"", subject:"JEE — Mathematics · Integral Calculus", exam:"JEE", difficulty:"Easy", year:"2022", type:"numerical", source:"JEE Archive", explanation:"∫₀² 2x dx = [x²]₀² = 4 − 0 = 4" },
-    { question:"The 5th term of an AP has first term 3 and common difference 4. What is its value?", numericalAnswer:19, unit:"", subject:"JEE — Mathematics · Sequences", exam:"JEE", difficulty:"Easy", year:"2021", type:"numerical", source:"JEE Archive", explanation:"aₙ = a + (n−1)d → a₅ = 3 + (4)×4 = 3 + 16 = 19" },
-    { question:"Find the distance between points A(0, 0) and B(5, 12).", numericalAnswer:13, unit:"", subject:"JEE — Mathematics · Coordinate Geometry", exam:"JEE", difficulty:"Easy", year:"2024", type:"numerical", source:"JEE Archive", explanation:"d = √(5² + 12²) = √(25 + 144) = √169 = 13" },
-    { question:"What is the sum of roots of the equation x² − 7x + 12 = 0?", numericalAnswer:7, unit:"", subject:"JEE — Mathematics · Algebra", exam:"JEE", difficulty:"Easy", year:"2023", type:"numerical", source:"JEE Archive", explanation:"By Vieta's formulae, sum of roots = −(coefficient of x)/(coefficient of x²) = 7" },
-    { question:"What is the coefficient of x³ in the binomial expansion of (1 + x)⁵?", numericalAnswer:10, unit:"", subject:"JEE — Mathematics · Binomial Theorem", exam:"JEE", difficulty:"Medium", year:"2022", type:"numerical", source:"JEE Archive", explanation:"C(5,3) = 5!/(3!×2!) = 10" },
-    { question:"Find the determinant of the matrix [[2, 1], [1, 2]].", numericalAnswer:3, unit:"", subject:"JEE — Mathematics · Matrices", exam:"JEE", difficulty:"Medium", year:"2021", type:"numerical", source:"JEE Archive", explanation:"det = (2)(2) − (1)(1) = 4 − 1 = 3" },
-    { question:"The sum of the infinite geometric series 1 + 1/3 + 1/9 + … is?", numericalAnswer:1.5, unit:"", subject:"JEE — Mathematics · Series", exam:"JEE", difficulty:"Medium", year:"2024", type:"numerical", source:"JEE Archive", explanation:"S = a/(1−r) = 1/(1 − 1/3) = 1/(2/3) = 3/2 = 1.5" },
-  ];
-
-  /* ═══════════════════════════════════════════════════════════
-     STATE
-  ═══════════════════════════════════════════════════════════ */
-  let allQ       = [];
-  let filteredQ  = [];
-  let currentIdx = 0;
-  let selected   = null;
-  let answered   = false;
-  let score      = 0;
-  let streak     = 0;
-  let activeExam = "ALL";
-  let timerSec   = 30;
-  let timerInterval = null;
-
-  /* DOM Refs */
-  const $loader    = document.getElementById('loadingScreen');
-  const $loaderRing= document.getElementById('loaderRing');
-  const $loadLog   = document.getElementById('loadLog');
-  const $fetchBtn  = document.getElementById('fetchBtn');
-  const $quizArea  = document.getElementById('quizArea');
-  const $tabsWrap  = document.getElementById('tabsWrap');
-  const $progFill  = document.getElementById('progFill');
-  const $progLabel = document.getElementById('progLabel');
-  const $progPct   = document.getElementById('progPct');
-  const $qCard     = document.getElementById('qCard');
-  const $qNumber   = document.getElementById('qNumber');
-  const $qMeta     = document.getElementById('qMeta');
-  const $qText     = document.getElementById('qText');
-  const $answerArea= document.getElementById('answerArea');
-  const $expBox    = document.getElementById('expBox');
-  const $expText   = document.getElementById('expText');
-  const $expCorrect= document.getElementById('expCorrectVal');
-  const $btnSubmit = document.getElementById('btnSubmit');
-  const $btnNext   = document.getElementById('btnNext');
-  const $btnSkip   = document.getElementById('btnSkip');
-  const $qCounter  = document.getElementById('qCounter');
-  const $results   = document.getElementById('resultsBox');
-  const $resEmoji  = document.getElementById('resEmoji');
-  const $resTitle  = document.getElementById('resTitle');
-  const $resSub    = document.getElementById('resSub');
-  const $resStats  = document.getElementById('resStatsRow');
-  const $ringArc   = document.getElementById('ringArc');
-  const $ringNum   = document.getElementById('ringNum');
-  const $scoreVal  = document.getElementById('scoreVal');
-  const $streakVal = document.getElementById('streakVal');
-  const $totalQCount = document.getElementById('totalQCount');
-
-  /* ─────────────────────────────────────────
-     LOGGING
-  ───────────────────────────────────────── */
-  function log(msg, type='') {
-    const el = document.createElement('div');
-    el.className = `log-line log-${type}`;
-    el.textContent = msg;
-    $loadLog.appendChild(el);
-    $loadLog.scrollTop = $loadLog.scrollHeight;
-  }
-
-  /* ─────────────────────────────────────────
-     INIT
-  ───────────────────────────────────────── */
-  async function init() {
-    log('> QuizForge v3.0 initialising…', 'info');
-    log('> Checking /api/questions…', 'info');
-    try {
-      const res  = await fetch('/api/questions');
-      const data = await res.json();
-      if (data.questions && data.questions.length > 0) {
-        log(`> Found ${data.questions.length} cached questions ✓`, 'ok');
-        log('> Merging JEE numerical bank…', 'ok');
-        log('> Launching quiz engine…', 'ok');
-        setTimeout(() => launchQuiz(data.questions), 700);
-      } else {
-        log('> No cached questions found.', '');
-        log('> Press the button below to fetch live PYQs.', 'info');
-        $loaderRing.style.animation = 'none';
-        $loaderRing.style.opacity   = '0.3';
-        $fetchBtn.style.display    = 'flex';
-      }
-    } catch (e) {
-      log(`> Server error: ${e.message}`, 'err');
-      log('> Ensure Flask (app.py) is running — python app.py', 'err');
-      $loaderRing.style.animation = 'none';
-      $fetchBtn.style.display    = 'flex';
-    }
-  }
-
-  /* ─────────────────────────────────────────
-     SCRAPE
-  ───────────────────────────────────────── */
-  async function startScrape() {
-    $fetchBtn.disabled = true;
-    $loaderRing.style.animation = '';
-    $loaderRing.style.opacity   = '1';
-    log('', '');
-    log('> Connecting to OpenTDB API…', 'info');
-    log('> Fetching JEE — Mathematics & Physics…', 'info');
-    log('> Fetching NEET — Biology & Life Sciences…', 'info');
-    log('> Fetching UPSC — Geography & History…', 'info');
-    log('> Fetching CAT — Quantitative Aptitude…', 'info');
-    log('> Fetching General Knowledge questions…', 'info');
-    log('> This may take 30–60 seconds…', '');
-    try {
-      const res  = await fetch('/api/scrape', { method:'POST' });
-      const data = await res.json();
-      if (data.status === 'success' && data.questions.length > 0) {
-        log(`> ✅ Fetched ${data.questions.length} questions!`, 'ok');
-        log('> Loading quiz…', 'ok');
-        setTimeout(() => launchQuiz(data.questions), 500);
-      } else {
-        log(`> ❌ Fetch failed: ${data.message || 'Unknown error'}`, 'err');
-        $fetchBtn.disabled = false;
-      }
-    } catch(e) {
-      log(`> ❌ Network error: ${e.message}`, 'err');
-      $fetchBtn.disabled = false;
-    }
-  }
-
-  /* ─────────────────────────────────────────
-     CONFIRM REFRESH
-  ───────────────────────────────────────── */
-  function confirmRefresh() {
-    if (!confirm('Re-fetch questions from the internet? This takes ~30–60 seconds.')) return;
-    allQ = []; filteredQ = [];
-    $quizArea.classList.remove('show');
-    $results.classList.remove('show');
-    $loader.classList.add('show');
-    $loadLog.innerHTML = '';
-    $fetchBtn.disabled = false;
-    $loaderRing.style.animation = '';
-    $loaderRing.style.opacity = '1';
-    $fetchBtn.style.display = 'flex';
-    log('> Ready to re-fetch…', 'info');
-  }
-
-  /* ─────────────────────────────────────────
-     LAUNCH QUIZ
-  ───────────────────────────────────────── */
-  function launchQuiz(questions) {
-    // Merge JEE numericals into the bank
-    const merged = [...questions, ...JEE_NUMERICALS];
-    allQ = merged;
-    $loader.classList.remove('show');
-    buildTabs();
-    applyFilter('ALL');
-    $quizArea.classList.add('show');
-    $totalQCount.textContent = allQ.length;
-    document.getElementById('downloadHdrBtn').style.display = 'flex';
-    const sources = [...new Set(allQ.map(q => q.source).filter(Boolean))];
-    const srcText = `LIVE — ${sources.join(' + ') || 'OpenTDB + JEE Archive'}`;
-    document.getElementById('sourceLabel').textContent = srcText;
-    document.getElementById('sourceLabelQuiz').textContent = srcText;
-  }
-
-  /* ─────────────────────────────────────────
-     TABS
-  ───────────────────────────────────────── */
-  const EXAM_ICONS = { ALL:'🎯', JEE:'⚛️', NEET:'🧬', UPSC:'🏛️', CAT:'📐', SAT:'🌍', GK:'💡' };
-
-  function buildTabs() {
-    const exams = ['ALL', ...new Set(allQ.map(q => q.exam).filter(Boolean)).values()].sort((a,b)=>{
-      if(a==='ALL') return -1; if(b==='ALL') return 1;
-      const order = ['JEE','NEET','UPSC','CAT','SAT','GK'];
-      return (order.indexOf(a)+1||99) - (order.indexOf(b)+1||99);
-    });
-    $tabsWrap.innerHTML = '';
-    exams.forEach(exam => {
-      const btn = document.createElement('button');
-      btn.className = 'tab' + (exam === 'ALL' ? ' active' : '');
-      btn.dataset.exam = exam;
-      const count = exam === 'ALL' ? allQ.length : allQ.filter(q=>q.exam===exam).length;
-      const icon = EXAM_ICONS[exam] || '📚';
-      btn.textContent = `${icon} ${exam} (${count})`;
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-        btn.classList.add('active');
-        applyFilter(exam);
-      });
-      $tabsWrap.appendChild(btn);
-    });
-  }
-
-  function applyFilter(exam) {
-    activeExam = exam;
-    // STRICT filtering — only show questions tagged to this exact exam
-    filteredQ = exam === 'ALL' ? [...allQ] : allQ.filter(q => q.exam === exam);
-    // Shuffle
-    for(let i=filteredQ.length-1;i>0;i--){
-      const j=Math.floor(Math.random()*(i+1));
-      [filteredQ[i],filteredQ[j]]=[filteredQ[j],filteredQ[i]];
-    }
-    score=0; streak=0; currentIdx=0;
-    $scoreVal.textContent  = 0;
-    $streakVal.textContent = 0;
-    $results.classList.remove('show');
-    renderQuestion();
-  }
-
-  /* ─────────────────────────────────────────
-     EXAM ACCENT COLOR
-  ───────────────────────────────────────── */
-  const EXAM_COLORS = { JEE:'#1E3A8A', NEET:'#15803D', UPSC:'#B91C1C', CAT:'#B45309', SAT:'#6D28D9', GK:'#EA580C' };
-  function getExamColor(exam) { return EXAM_COLORS[exam] || '#1E3A8A'; }
-
-  /* ─────────────────────────────────────────
-     CONTEXTUAL BOOK RECOMMENDATION AD
-     Fires ~0.9 s after each question renders
-     via CSS animation-delay on the card.
-  ───────────────────────────────────────── */
-
-  /**
-   * Book catalogue — keyed by subject/exam context.
-   * Each entry: { emoji, title, author, why, amazon, coverBg }
-   */
-  const AD_BOOKS = {
-    jee_physics: {
-      emoji: '⚛️',
-      title: 'Concepts of Physics',
-      author: 'H.C. Verma · Vol. 1 & 2',
-      why: 'The gold-standard JEE Physics reference — every concept explained from first principles.',
-      amazon: 'https://www.amazon.in/s?k=concepts+of+physics+hc+verma',
-      coverBg: 'linear-gradient(135deg,#1E3A8A,#3B82F6)',
-    },
-    neet_bio: {
-      emoji: '🧬',
-      title: 'NCERT at your Fingertips — Biology',
-      author: 'MTG Editorial Board',
-      why: 'Chapter-wise MCQs mapped directly to NCERT — the most-recommended NEET Biology prep book.',
-      amazon: 'https://www.amazon.in/s?k=ncert+at+your+fingertips+biology+mtg',
-      coverBg: 'linear-gradient(135deg,#15803D,#22C55E)',
-    },
-    upsc_polity: {
-      emoji: '🏛️',
-      title: 'Indian Polity',
-      author: 'M. Laxmikanth · 6th Edition',
-      why: 'Considered the single most important book for UPSC Polity — covered in every serious aspirant\'s list.',
-      amazon: 'https://www.amazon.in/s?k=indian+polity+laxmikanth',
-      coverBg: 'linear-gradient(135deg,#B91C1C,#EF4444)',
-    },
-    cat_aptitude: {
-      emoji: '📐',
-      title: 'Quantitative Aptitude',
-      author: 'Arun Sharma · 9th Edition',
-      why: 'The definitive CAT Quant resource — shortcuts, tricks, and thousands of graded practice problems.',
-      amazon: 'https://www.amazon.in/s?k=quantitative+aptitude+arun+sharma+cat',
-      coverBg: 'linear-gradient(135deg,#B45309,#D97706)',
-    },
-    gk_default: {
-      emoji: '🌐',
-      title: 'Manorama Yearbook 2026',
-      author: 'Mammen Mathew (Ed.)',
-      why: 'India\'s best-selling almanac — current affairs, statistics & GK for all competitive exams.',
-      amazon: 'https://www.amazon.in/s?k=manorama+yearbook+2026',
-      coverBg: 'linear-gradient(135deg,#EA580C,#FB923C)',
-    },
-  };
-
-  /**
-   * Picks the correct book based on subject/exam context
-   * and injects a premium recommendation card into #adContainer.
-   * Does NOT alter how questions are fetched or rendered.
-   */
-  function injectResourceAd(subject) {
-    const $ad = document.getElementById('adContainer');
-    if (!$ad) return;
-
-    // Normalise to uppercase for matching
-    const s = (subject || '').toUpperCase();
-
-    let book;
-    if (s.includes('JEE') || s.includes('PHYSICS') || s.includes('MATH') || s.includes('CHEMISTRY')) {
-      book = AD_BOOKS.jee_physics;
-    } else if (s.includes('NEET') || s.includes('BIOLOGY') || s.includes('BIO')) {
-      book = AD_BOOKS.neet_bio;
-    } else if (s.includes('UPSC') || s.includes('POLITY') || s.includes('POLITICS') || s.includes('HISTORY') || s.includes('GEOGRAPHY')) {
-      book = AD_BOOKS.upsc_polity;
-    } else if (s.includes('CAT') || s.includes('APTITUDE') || s.includes('QUANTITATIVE')) {
-      book = AD_BOOKS.cat_aptitude;
-    } else {
-      book = AD_BOOKS.gk_default;
-    }
-
-    // Build the card HTML
-    $ad.innerHTML = `
-      <div class="resource-ad-card" role="complementary" aria-label="Recommended study resource">
-        <button class="ad-dismiss" onclick="this.closest('.resource-ad-card').remove()" aria-label="Dismiss recommendation" title="Dismiss">✕</button>
-
-        <!-- Book cover thumbnail -->
-        <div class="ad-cover" style="background:${book.coverBg}" aria-hidden="true">
-          <span>${book.emoji}</span>
-        </div>
-
-        <!-- Text block -->
-        <div class="ad-body">
-          <div class="ad-label">✦ Curated for this topic</div>
-          <div class="ad-title">${book.title}</div>
-          <div class="ad-author">${book.author}</div>
-          <div class="ad-why">${book.why}</div>
-        </div>
-
-        <!-- CTA -->
-        <a class="ad-cta"
-           href="${book.amazon}"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="View ${book.title} on Amazon">
-          View on Amazon 🛒
-        </a>
-      </div>
-    `;
-  }
-
-  /* ─────────────────────────────────────────
-     RENDER QUESTION
-  ───────────────────────────────────────── */
-  function renderQuestion() {
-    clearInterval(timerInterval);
-    if (currentIdx >= filteredQ.length) { showResults(); return; }
-    const q = filteredQ[currentIdx];
-    selected = null; answered = false;
-
-    // Card accent
-    const accentColor = getExamColor(q.exam);
-    $qCard.style.setProperty('--card-accent', accentColor);
-
-    // Progress
-    const pct = Math.round((currentIdx / filteredQ.length) * 100);
-    $progFill.style.width  = pct + '%';
-    $progLabel.textContent = `Q ${currentIdx+1} / ${filteredQ.length}`;
-    $progPct.textContent   = pct + '%';
-
-    // Question number
-    $qNumber.textContent = `Question ${currentIdx+1} of ${filteredQ.length}`;
-
-    // Meta badges
-    const examColor = accentColor;
-    const isNumerical = q.type === 'numerical';
-    $qMeta.innerHTML = `
-      <span class="badge badge-exam" style="background:${examColor}15;border-color:${examColor}30;color:${examColor}">${q.exam || 'GK'}</span>
-      ${isNumerical ? '<span class="badge badge-numerical">🔢 Numerical</span>' : ''}
-      <span class="badge badge-subj">${q.subject || ''}</span>
-      <span class="badge badge-year">${q.year || 'PYQ'}</span>
-      <span class="badge badge-diff ${q.difficulty || 'Medium'}">${q.difficulty || 'Medium'}</span>
-      <span class="timer-badge" id="timerBadge">⏱ <span id="timerNum">30</span>s</span>
-    `;
-
-    $qText.textContent = q.question;
-    $expBox.classList.remove('show');
-    $expCorrect.style.display = 'none';
-    $btnSubmit.disabled = true;
-    $btnSubmit.style.display = '';
-    $btnNext.style.display   = 'none';
-    $qCounter.textContent    = `${currentIdx+1} of ${filteredQ.length} · ${filteredQ.length - currentIdx - 1} remaining`;
-
-    // Render answer area
-    if (isNumerical) {
-      renderNumerical(q);
-    } else {
-      renderMCQ(q);
-    }
-
-    // ── Contextual Book Ad — fires after answer area is ready ──
-    injectResourceAd(q.subject || q.exam || '');
-
-    $qCard.style.display = '';
-    $qCard.style.animation = 'none';
-    void $qCard.offsetWidth;
-    $qCard.style.animation = '';
-
-    // Timer
-    timerSec = isNumerical ? 45 : 30;
-    updateTimer(timerSec);
-    timerInterval = setInterval(() => {
-      timerSec--;
-      updateTimer(timerSec);
-      if (timerSec <= 0) {
-        clearInterval(timerInterval);
-        if (!answered) { streak=0; $streakVal.textContent=0; revealAndAdvance(); }
-      }
-    }, 1000);
-  }
-
-  /* ── MCQ rendering ── */
-  function renderMCQ(q) {
-    $answerArea.innerHTML = '<div class="options" id="optList"></div>';
-    const $optList = document.getElementById('optList');
-    const letters = Object.keys(q.options);
-    letters.forEach(letter => {
-      const div = document.createElement('div');
-      div.className = 'option';
-      div.dataset.letter = letter;
-      div.innerHTML = `<div class="opt-key">${letter}</div><div class="opt-text">${q.options[letter]}</div>`;
-      div.addEventListener('click', () => selectMCQ(letter));
-      $optList.appendChild(div);
-    });
-  }
-
-  /* ── Numerical rendering ── */
-  function renderNumerical(q) {
-    const unit = q.unit ? `<span>${q.unit}</span>` : '';
-    $answerArea.innerHTML = `
-      <div class="numerical-wrap">
-        <div class="num-label">🔢 Enter your numerical answer ${unit}</div>
-        <div class="num-input-row">
-          <input type="number" id="numInput" class="numerical-input" placeholder="Type your answer…" step="any" />
-        </div>
-        <div class="num-hint">Type the exact numerical value and click <strong>Check Answer</strong>. JEE numericals accept answers within ±0.01 tolerance.</div>
-      </div>
-    `;
-    const $numIn = document.getElementById('numInput');
-    $numIn.addEventListener('input', () => {
-      $btnSubmit.disabled = $numIn.value.trim() === '';
-    });
-    $numIn.addEventListener('keydown', e => {
-      if (e.key === 'Enter' && !$btnSubmit.disabled && !answered) submitAnswer();
-    });
-  }
-
-  function updateTimer(sec) {
-    const el = document.getElementById('timerNum');
-    const badge = document.getElementById('timerBadge');
-    if (el) el.textContent = sec;
-    if (badge) badge.className = 'timer-badge' + (sec <= 8 ? ' urgent' : '');
-  }
-
-  /* ─────────────────────────────────────────
-     SELECT OPTION (MCQ)
-  ───────────────────────────────────────── */
-  function selectMCQ(letter) {
-    if (answered) return;
-    selected = letter;
-    document.querySelectorAll('.option').forEach(opt => {
-      opt.classList.toggle('selected', opt.dataset.letter === letter);
-    });
-    $btnSubmit.disabled = false;
-  }
-
-  // Keyboard 1-4 for MCQ
-  document.addEventListener('keydown', e => {
-    if (!['1','2','3','4'].includes(e.key)) return;
-    if (answered) return;
-    const q = filteredQ[currentIdx];
-    if (q && q.type === 'numerical') return;
-    const letters = ['A','B','C','D'];
-    selectMCQ(letters[parseInt(e.key)-1]);
-  });
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Enter' && selected && !answered) submitAnswer();
-    if (e.key === 'ArrowRight' && answered) nextQuestion();
-  });
-
-  /* ─────────────────────────────────────────
-     SUBMIT ANSWER
-  ───────────────────────────────────────── */
-  function submitAnswer() {
-    if (answered) return;
-    clearInterval(timerInterval);
-    answered = true;
-    const q = filteredQ[currentIdx];
-    const isNumerical = q.type === 'numerical';
-    let isCorrect = false;
-
-    if (isNumerical) {
-      const $input = document.getElementById('numInput');
-      const userVal = parseFloat($input.value);
-      const tolerance = q.tolerance !== undefined ? q.tolerance : 0.01;
-      isCorrect = !isNaN(userVal) && Math.abs(userVal - q.numericalAnswer) <= Math.max(tolerance, Math.abs(q.numericalAnswer) * 0.001 + 0.01);
-      $input.disabled = true;
-      $input.classList.add(isCorrect ? 'correct-input' : 'wrong-input');
-      $expCorrect.textContent = `✓ Correct answer: ${q.numericalAnswer}${q.unit ? ' ' + q.unit : ''}`;
-      $expCorrect.style.display = 'block';
-    } else {
-      if (!selected) return;
-      isCorrect = selected === q.answer;
-      document.querySelectorAll('.option').forEach(opt => {
-        opt.classList.add('locked');
-        opt.classList.remove('selected');
-        if (opt.dataset.letter === q.answer) opt.classList.add('correct');
-        else if (opt.dataset.letter === selected && !isCorrect) opt.classList.add('wrong');
-      });
-    }
-
-    if (isCorrect) {
-      score++; streak++;
-      $scoreVal.textContent  = score;
-      $streakVal.textContent = streak;
-      if (streak >= 3) spawnConfetti(document.getElementById('qCard'));
-    } else {
-      streak = 0;
-      $streakVal.textContent = 0;
-    }
-
-    $expText.textContent = q.explanation || 'No explanation available.';
-    $expBox.classList.add('show');
-    $btnSubmit.style.display = 'none';
-    $btnNext.style.display   = '';
-  }
-
-  function revealAndAdvance() {
-    answered = true;
-    const q = filteredQ[currentIdx];
-    if (q.type !== 'numerical') {
-      document.querySelectorAll('.option').forEach(opt => {
-        opt.classList.add('locked');
-        if (opt.dataset.letter === q.answer) opt.classList.add('reveal');
-      });
-    } else {
-      const $input = document.getElementById('numInput');
-      if ($input) { $input.disabled = true; }
-      $expCorrect.textContent = `✓ Correct answer: ${q.numericalAnswer}${q.unit ? ' ' + q.unit : ''}`;
-      $expCorrect.style.display = 'block';
-    }
-    $expText.textContent = q.explanation || '';
-    $expBox.classList.add('show');
-    $btnSubmit.style.display = 'none';
-    $btnNext.style.display   = '';
-    streak = 0; $streakVal.textContent = 0;
-  }
-
-  function nextQuestion() { currentIdx++; renderQuestion(); }
-  function skipQuestion()  {
-    clearInterval(timerInterval); streak=0; $streakVal.textContent=0;
-    currentIdx++; renderQuestion();
-  }
-
-  /* ─────────────────────────────────────────
-     RESULTS
-  ───────────────────────────────────────── */
-  function showResults() {
-    clearInterval(timerInterval);
-    $qCard.style.display = 'none';
-    $results.classList.add('show');
-    $progFill.style.width = '100%';
-
-    const pct   = Math.round((score / filteredQ.length) * 100);
-    const emoji = pct===100?'🏆':pct>=80?'🎉':pct>=60?'💪':pct>=40?'📚':'😤';
-    const title = pct===100?'Flawless!':pct>=80?'Outstanding!':pct>=60?'Well Done!':pct>=40?'Keep Going!':'Back to Books!';
-
-    $resEmoji.textContent  = emoji;
-    $resTitle.textContent  = title;
-    $resSub.textContent    = `${score} of ${filteredQ.length} correct — ${pct}% accuracy`;
-    $ringArc.style.setProperty('--pct', pct);
-    $ringNum.textContent   = `${score}/${filteredQ.length}`;
-
-    const numQ = filteredQ.filter(q => q.type === 'numerical').length;
-    const mcqQ = filteredQ.length - numQ;
-    $resStats.innerHTML = `
-      <div class="res-stat"><span class="res-stat-val">${pct}%</span><div class="res-stat-lbl">Accuracy</div></div>
-      <div class="res-stat"><span class="res-stat-val">${score}</span><div class="res-stat-lbl">Correct</div></div>
-      <div class="res-stat"><span class="res-stat-val">${filteredQ.length - score}</span><div class="res-stat-lbl">Incorrect</div></div>
-      <div class="res-stat"><span class="res-stat-val">${mcqQ}</span><div class="res-stat-lbl">MCQ</div></div>
-      ${numQ > 0 ? `<div class="res-stat"><span class="res-stat-val">${numQ}</span><div class="res-stat-lbl">Numerical</div></div>` : ''}
-    `;
-
-    if (pct === 100) setTimeout(() => spawnConfetti(null), 300);
-  }
-
-  function restartQuiz() {
-    $results.classList.remove('show');
-    applyFilter(activeExam);
-  }
-
-  /* ─────────────────────────────────────────
-     DOWNLOAD FEATURES
-  ───────────────────────────────────────── */
-  function openDownload() {
-    if (!filteredQ.length) { toast('⚠️ No questions loaded yet.'); return; }
-    document.getElementById('downloadModal').classList.add('open');
-  }
-  function closeDownload() {
-    document.getElementById('downloadModal').classList.remove('open');
-  }
-  document.getElementById('downloadModal').addEventListener('click', function(e) {
-    if (e.target === this) closeDownload();
-  });
-
-  function downloadJSON() {
-    const exam = activeExam === 'ALL' ? 'All_Exams' : activeExam;
-    const data = {
-      generated: new Date().toISOString(),
-      exam: activeExam,
-      count: filteredQ.length,
-      questions: filteredQ.map((q, i) => ({
-        number: i+1,
-        exam: q.exam,
-        subject: q.subject,
-        year: q.year,
-        difficulty: q.difficulty,
-        type: q.type || 'mcq',
-        question: q.question,
-        ...(q.type === 'numerical' ? { answer: q.numericalAnswer, unit: q.unit } : { options: q.options, answer: q.answer }),
-        explanation: q.explanation
-      }))
-    };
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type:'application/json' });
-    const url  = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url; a.download = `QuizForge_${exam}_Questions.json`;
-    a.click(); URL.revokeObjectURL(url);
-    closeDownload(); toast('✅ JSON downloaded!');
-  }
-
-  function downloadCSV() {
-    const exam = activeExam === 'ALL' ? 'All_Exams' : activeExam;
-    const rows = [['#','Exam','Subject','Year','Difficulty','Type','Question','Answer/Options','Explanation']];
-    filteredQ.forEach((q, i) => {
-      const answerStr = q.type === 'numerical'
-        ? `${q.numericalAnswer}${q.unit ? ' ' + q.unit : ''}`
-        : `A: ${q.options?.A||''} | B: ${q.options?.B||''} | C: ${q.options?.C||''} | D: ${q.options?.D||''} | Correct: ${q.answer}`;
-      rows.push([i+1, q.exam, q.subject, q.year, q.difficulty, q.type||'mcq',
-        `"${(q.question||'').replace(/"/g,'""')}"`,
-        `"${answerStr.replace(/"/g,'""')}"`,
-        `"${(q.explanation||'').replace(/"/g,'""')}"`
-      ]);
-    });
-    const csv = rows.map(r => r.join(',')).join('\n');
-    const blob = new Blob([csv], { type:'text/csv' });
-    const url  = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url; a.download = `QuizForge_${exam}_Questions.csv`;
-    a.click(); URL.revokeObjectURL(url);
-    closeDownload(); toast('✅ CSV downloaded!');
-  }
-
-  function downloadPDF() {
-    closeDownload();
-    const exam = activeExam === 'ALL' ? 'All Exams' : activeExam;
-    const printWin = window.open('', '_blank');
-    let html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>QuizForge — ${exam} Questions</title>
-    <style>
-      body { font-family: Georgia, serif; max-width: 760px; margin: 40px auto; padding: 0 24px; color: #1C1917; line-height: 1.7; }
-      h1 { font-size: 2rem; color: #1E3A8A; border-bottom: 3px solid #1E3A8A; padding-bottom: 12px; margin-bottom: 6px; }
-      .meta { font-size: 0.82rem; color: #78716C; margin-bottom: 32px; font-family: monospace; }
-      .q-block { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid #E8DCC8; break-inside: avoid; }
-      .q-num { font-size: 0.72rem; font-family: monospace; color: #A8A29E; text-transform: uppercase; letter-spacing: 0.1em; }
-      .q-badges { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 10px; }
-      .badge { font-size: 0.65rem; padding: 2px 8px; border-radius: 5px; font-family: monospace; font-weight: 600; }
-      .b-exam { background: #DBEAFE; color: #1E3A8A; }
-      .b-subj { background: #FFF7ED; color: #C2410C; }
-      .b-diff-easy { background: #DCFCE7; color: #15803D; }
-      .b-diff-med  { background: #FEF3C7; color: #B45309; }
-      .b-diff-hard { background: #FEE2E2; color: #B91C1C; }
-      .b-num  { background: #F5F3FF; color: #6D28D9; }
-      .q-text { font-size: 1.05rem; font-weight: 600; color: #1C1917; margin-bottom: 10px; }
-      .options { margin-left: 16px; }
-      .opt { margin: 4px 0; font-size: 0.9rem; }
-      .opt .key { font-family: monospace; font-weight: 700; color: #44403C; min-width: 24px; display: inline-block; }
-      .num-ans { font-family: monospace; font-size: 0.9rem; color: #6D28D9; margin-top: 6px; }
-      .answer  { margin-top: 8px; font-size: 0.82rem; color: #15803D; font-weight: 700; font-family: monospace; }
-      .explanation { margin-top: 8px; font-size: 0.82rem; color: #44403C; font-style: italic; background: #EFF6FF; padding: 8px 12px; border-radius: 6px; border-left: 3px solid #3B82F6; }
-      @media print { body { margin: 20px; } }
-    </style></head><body>
-    <h1>🎯 QuizForge — ${exam}</h1>
-    <div class="meta">Generated: ${new Date().toLocaleString()} · Total Questions: ${filteredQ.length} · Source: QuizForge Premium PYQ Engine</div>`;
-
-    filteredQ.forEach((q, i) => {
-      const diffClass = q.difficulty === 'Easy' ? 'b-diff-easy' : q.difficulty === 'Hard' ? 'b-diff-hard' : 'b-diff-med';
-      html += `<div class="q-block">
-        <div class="q-num">Question ${i+1}</div>
-        <div class="q-badges">
-          <span class="badge b-exam">${q.exam||'GK'}</span>
-          ${q.type==='numerical'?'<span class="badge b-num">🔢 Numerical</span>':''}
-          <span class="badge b-subj">${(q.subject||'').split('—').pop().trim()}</span>
-          <span class="badge ${diffClass}">${q.difficulty||'Medium'}</span>
-          <span class="badge" style="background:#F3EBD8;color:#78716C">${q.year||'PYQ'}</span>
-        </div>
-        <div class="q-text">${q.question}</div>`;
-      if (q.type === 'numerical') {
-        html += `<div class="num-ans">Enter numerical answer (${q.unit||'no unit'})</div>
-          <div class="answer">Answer: ${q.numericalAnswer}${q.unit?' '+q.unit:''}</div>`;
-      } else if (q.options) {
-        html += '<div class="options">';
-        Object.entries(q.options).forEach(([k,v]) => {
-          const correct = k === q.answer;
-          html += `<div class="opt"><span class="key">${k}.</span> ${v}${correct?' ✓':''}</div>`;
-        });
-        html += '</div>';
-        html += `<div class="answer">Correct Answer: ${q.answer}</div>`;
-      }
-      if (q.explanation) html += `<div class="explanation">${q.explanation}</div>`;
-      html += '</div>';
-    });
-
-    html += '</body></html>';
-    printWin.document.write(html);
-    printWin.document.close();
-    setTimeout(() => printWin.print(), 600);
-    toast('🖨️ Opening print dialog…');
-  }
-
-  /* ─────────────────────────────────────────
-     CONFETTI
-  ───────────────────────────────────────── */
-  const CONFETTI_COLORS = ['#1E3A8A','#EA580C','#6D28D9','#D97706','#15803D','#F97316','#3B82F6'];
-  function spawnConfetti(anchor) {
-    const count = anchor ? 28 : 90;
-    for(let i=0;i<count;i++) {
-      const p = document.createElement('div');
-      p.className = 'confetti-piece';
-      const rect = anchor ? anchor.getBoundingClientRect() : {left:window.innerWidth/2, top:window.innerHeight/3, width:0};
-      p.style.cssText = `
-        left:${rect.left + Math.random()*Math.max(rect.width,200) + (anchor?0:-100)}px;
-        top:${rect.top + (anchor?0:0)}px;
-        background:${CONFETTI_COLORS[Math.floor(Math.random()*CONFETTI_COLORS.length)]};
-        animation-delay:${Math.random()*0.5}s;
-        animation-duration:${1.8+Math.random()*1.5}s;
-        transform:rotate(${Math.random()*360}deg);
-        border-radius:${Math.random()>0.5?'50%':'2px'};
-        width:${6+Math.random()*6}px; height:${6+Math.random()*6}px;
-      `;
-      document.body.appendChild(p);
-      setTimeout(()=>p.remove(), 3500);
-    }
-  }
-
-  /* ─────────────────────────────────────────
-     MUSIC PLAYER
-  ───────────────────────────────────────── */
-  const TRACKS = [
-    {name:"Lo-Fi Study Beats",  src:"iloveradio",     emoji:"🎵", url:"https://streams.ilovemusic.de/iloveradio17.mp3",  type:"radio"},
-    {name:"Chill Jazz Café",    src:"JazzGroove",     emoji:"🎷", url:"https://jzgroove.streamguys1.com/jazzgroove-dash",type:"radio"},
-    {name:"Classical Focus",    src:"Klassik Radio",  emoji:"🎻", url:"https://stream.klassikradio.de/klassikradio/mp3-128/stream.klassikradio.de/",type:"radio"},
-    {name:"Synthwave Night",    src:"iloveradio",     emoji:"🌃", url:"https://streams.ilovemusic.de/iloveradio2.mp3",   type:"radio"},
-    {name:"Lo-Fi Ambient Synth",src:"Built-in Synth", emoji:"🌊", url:"SYNTH", type:"synth"},
-  ];
-  let trackIdx=0, isPlaying=false, audioCtx=null, synthGain=null, synthInterval=null;
-  const $audio=$('audioEl'), $btnPlay=$('btnPlay'), $disc=$('disc'),
-        $tName=$('trackName'), $tSrc=$('trackSrc'),
-        $eq=$('eqBars'), $vol=$('volSlider'), $mStatus=$('musicStatus');
-  function $(s){return document.getElementById(s);}
-
-  $audio.volume=0.5;
-
-  function initAudio(){
-    if(!audioCtx){
-      audioCtx=new(window.AudioContext||window.webkitAudioContext)();
-      synthGain=audioCtx.createGain(); synthGain.gain.value=0.18;
-      const f=audioCtx.createBiquadFilter(); f.type='lowpass'; f.frequency.value=900;
-      synthGain.connect(f); f.connect(audioCtx.destination);
-    }
-  }
-  function playNote(freq,start,dur,vol=0.12){
-    if(!audioCtx)return;
-    const o=audioCtx.createOscillator(), g=audioCtx.createGain();
-    o.type='sine'; o.frequency.setValueAtTime(freq,start);
-    g.gain.setValueAtTime(0,start);
-    g.gain.linearRampToValueAtTime(vol,start+0.18);
-    g.gain.setValueAtTime(vol,start+dur-0.3);
-    g.gain.linearRampToValueAtTime(0,start+dur);
-    o.connect(g); g.connect(synthGain); o.start(start); o.stop(start+dur);
-  }
-  const CHORDS=[[261.63,329.63,392],[220,261.63,329.63],[174.61,220,261.63],[196,246.94,293.66]];
-  let chordIdx=0;
-  function startSynth(){
-    initAudio();
-    if(audioCtx.state==='suspended')audioCtx.resume();
-    function chord(){
-      if(!isPlaying)return;
-      const now=audioCtx.currentTime, c=CHORDS[chordIdx%CHORDS.length];
-      c.forEach((f,i)=>playNote(f*0.5,now+i*0.07,3.5,0.1));
-      playNote(c[2]*2,now+0.5,1.2,0.06); playNote(c[0]*2,now+2,0.9,0.05);
-      chordIdx++;
-    }
-    chord(); synthInterval=setInterval(chord,4200);
-  }
-  function stopSynth(){clearInterval(synthInterval);synthInterval=null;}
-
-  function loadTrack(idx,autoplay=false){
-    const t=TRACKS[idx];
-    $tName.textContent=t.name; $tSrc.textContent=t.src;
-    $disc.querySelector('.disc-emoji').textContent=t.emoji;
-    if(t.type==='synth'){
-      $audio.pause(); $audio.src='';
-      $mStatus.textContent='SYNTH'; $mStatus.className='music-status synth';
-      if(autoplay){isPlaying=true;startSynth();setPlayUI(true);}
-    } else {
-      $mStatus.textContent='RADIO'; $mStatus.className='music-status';
-      stopSynth(); $audio.src=t.url;
-      if(autoplay){$audio.play().then(()=>setPlayUI(true)).catch(()=>{trackIdx=TRACKS.length-1;loadTrack(trackIdx,true);});}
-    }
-  }
-  function setPlayUI(p){
-    isPlaying=p; $btnPlay.textContent=p?'⏸':'▶';
-    $disc.classList.toggle('playing',p); $eq.classList.toggle('active',p);
-  }
-  function togglePlay(){
-    const t=TRACKS[trackIdx];
-    if(t.type==='synth'){isPlaying?stopSynth():startSynth();setPlayUI(!isPlaying);return;}
-    if($audio.paused){
-      if(!$audio.src)loadTrack(trackIdx);
-      $audio.play().then(()=>setPlayUI(true)).catch(()=>{trackIdx=TRACKS.length-1;loadTrack(trackIdx,true);});
-    } else {$audio.pause();setPlayUI(false);}
-  }
-  function prevTrack(){stopSynth();trackIdx=(trackIdx-1+TRACKS.length)%TRACKS.length;loadTrack(trackIdx,isPlaying);}
-  function nextTrack(){stopSynth();trackIdx=(trackIdx+1)%TRACKS.length;loadTrack(trackIdx,isPlaying);}
-  function setVol(v){$audio.volume=v/100;if(synthGain)synthGain.gain.value=(v/100)*0.22;}
-  $audio.addEventListener('ended',nextTrack);
-  $audio.addEventListener('error',()=>{if(trackIdx<TRACKS.length-1){trackIdx++;loadTrack(trackIdx,true);}else{trackIdx=TRACKS.length-1;loadTrack(trackIdx,true);}});
-  loadTrack(trackIdx,false);
-
-  /* ─────────────────────────────────────────
-     TOAST
-  ───────────────────────────────────────── */
-  function toast(msg,ms=4500){
-    document.querySelectorAll('.toast').forEach(t=>t.remove());
-    const el=document.createElement('div');
-    el.className='toast'; el.textContent=msg;
-    document.body.appendChild(el);
-    setTimeout(()=>el.remove(),ms);
-  }
-
-  /* BOOT */
-  init();
-  setTimeout(()=>toast('⚡ Keys 1–4 to select · Enter to confirm · → for next'),2500);
-  </script>
+  <script src="/static/js/app.js"></script>
 </body>
 </html>
