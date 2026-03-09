@@ -1,0 +1,1928 @@
+[
+  {
+    "subject": "UPSC — Art, Culture & Mythology",
+    "exam": "UPSC",
+    "year": "2020",
+    "difficulty": "Medium",
+    "question": "Which greek god/goddess tossed a golden apple with the words \"for the fairest\" into the middle of the feast of the gods?",
+    "options": {
+      "A": "Hades",
+      "B": "Ares",
+      "C": "Eris",
+      "D": "Artemis"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Eris. This question tests Art, Culture & Mythology — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 1
+  },
+  {
+    "subject": "GK — Science & Technology",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "What was the name of the security vulnerability found in Bash in 2014?",
+    "options": {
+      "A": "Shellshock",
+      "B": "Stagefright",
+      "C": "Heartbleed",
+      "D": "Bashbug"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Shellshock. This question tests Science & Technology — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 2
+  },
+  {
+    "subject": "UPSC — Art, Culture & Mythology",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Medium",
+    "question": "What is the name of the Greek god of peaceful deaths?",
+    "options": {
+      "A": "Hades",
+      "B": "Thanatos",
+      "C": "Tartarus",
+      "D": "Moros"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Thanatos. This question tests Art, Culture & Mythology — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 3
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "2021",
+    "difficulty": "Hard",
+    "question": "What country is not a part of Scandinavia?",
+    "options": {
+      "A": "Denmark",
+      "B": "Sweden",
+      "C": "Finland",
+      "D": "Norway"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Finland. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 4
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "PYQ",
+    "difficulty": "Easy",
+    "question": "The asteroid belt is located between which two planets?",
+    "options": {
+      "A": "Mars and Jupiter",
+      "B": "Earth and Mars",
+      "C": "Jupiter and Saturn",
+      "D": "Mercury and Venus"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Mars and Jupiter. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 5
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "2020",
+    "difficulty": "Hard",
+    "question": "Which of the following chemicals are found in eggplant seeds?",
+    "options": {
+      "A": "Nicotine",
+      "B": "Psilocybin",
+      "C": "Mescaline",
+      "D": "Cyanide"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Nicotine. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 6
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "Which of these African countries displays a gun on their flag?",
+    "options": {
+      "A": "Mozambique",
+      "B": "Ethiopia",
+      "C": "Nigeria",
+      "D": "Uganda"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Mozambique. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 7
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "2020",
+    "difficulty": "Easy",
+    "question": "Which Apollo mission was the first one to land on the Moon?",
+    "options": {
+      "A": "Apollo 9",
+      "B": "Apollo 13",
+      "C": "Apollo 11",
+      "D": "Apollo 10"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Apollo 11. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 8
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "The notion of a \"set that contains all sets which do not contain themselves\" is a paradoxical idea attributed to which English philosopher?",
+    "options": {
+      "A": "John Locke",
+      "B": "Francis Bacon",
+      "C": "Bertrand Russel",
+      "D": "Alfred North Whitehead"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Bertrand Russel. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 9
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "2021",
+    "difficulty": "Easy",
+    "question": "How many moons does the Earth have?",
+    "options": {
+      "A": "3",
+      "B": "1",
+      "C": "2",
+      "D": "0"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: 1. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 10
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "2019",
+    "difficulty": "Hard",
+    "question": "Where is the city of Haarlem located?",
+    "options": {
+      "A": "The Netherlands",
+      "B": "Germany",
+      "C": "United States",
+      "D": "Switzerland"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: The Netherlands. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 11
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2022",
+    "difficulty": "Hard",
+    "question": "How many Millibars (mbar) to 1 Inch of Mercury (inHg)",
+    "options": {
+      "A": "30.0",
+      "B": "27.4",
+      "C": "33.9",
+      "D": "10.6"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: 33.9. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 12
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "2024",
+    "difficulty": "Hard",
+    "question": "Which one of these is scientific term for \"Brain Freeze\"?",
+    "options": {
+      "A": "Sphenopalatine Ganglioneuralgia",
+      "B": "Amaranthus Retroflexus",
+      "C": "Amblyomma Americanum",
+      "D": "Hyacinthoides Italica"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Sphenopalatine Ganglioneuralgia. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 13
+  },
+  {
+    "subject": "UPSC — Art, Culture & Mythology",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Medium",
+    "question": "Neptune's greek name was...",
+    "options": {
+      "A": "Ares",
+      "B": "Zeus",
+      "C": "Poseidon",
+      "D": "Apollo"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Poseidon. This question tests Art, Culture & Mythology — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 14
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "What is the fourth digit of π?",
+    "options": {
+      "A": "3",
+      "B": "1",
+      "C": "4",
+      "D": "2"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: 1. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 15
+  },
+  {
+    "subject": "GK — Science & Technology",
+    "exam": "GK",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "Who is the founder of Palantir?",
+    "options": {
+      "A": "Peter Thiel",
+      "B": "Jack Dorsey",
+      "C": "Marc Benioff",
+      "D": "Mark Zuckerberg"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Peter Thiel. This question tests Science & Technology — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 16
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "How many legs is it biologically impossible for a centipede to have?",
+    "options": {
+      "A": "74",
+      "B": "100",
+      "C": "50",
+      "D": "26"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: 100. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 17
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "When did Spanish Peninsular War start?",
+    "options": {
+      "A": "1809",
+      "B": "1808",
+      "C": "1810",
+      "D": "1806"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: 1808. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 18
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "2022",
+    "difficulty": "Hard",
+    "question": "Which country is the Taedong River in?",
+    "options": {
+      "A": "North Korea",
+      "B": "Japan",
+      "C": "South Korea",
+      "D": "China"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: North Korea. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 19
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2022",
+    "difficulty": "Medium",
+    "question": "What is the world's longest venomous snake?",
+    "options": {
+      "A": "Yellow Bellied Sea Snake",
+      "B": "King Cobra",
+      "C": "Inland Taipan",
+      "D": "Green Anaconda"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: King Cobra. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 20
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Who was the President of the United States during the signing of the Gadsden Purchase?",
+    "options": {
+      "A": "Abraham Lincoln",
+      "B": "Franklin Pierce",
+      "C": "Andrew Johnson",
+      "D": "James Polk"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Franklin Pierce. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 21
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2021",
+    "difficulty": "Medium",
+    "question": "What are the scales on all snakes and most lizards are made of?",
+    "options": {
+      "A": "Ankyloglossia",
+      "B": "Keratin",
+      "C": "Ecdysis",
+      "D": "Epidermis"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Keratin. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 22
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "Who assassinated President James A. Garfield?",
+    "options": {
+      "A": "Charles Guiteau",
+      "B": "John Wilkes Booth",
+      "C": "Sirhan Sirhan",
+      "D": "Leon Czolgosz"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Charles Guiteau. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 23
+  },
+  {
+    "subject": "GK — Science & Technology",
+    "exam": "GK",
+    "year": "2021",
+    "difficulty": "Hard",
+    "question": "Lenovo acquired IBM's personal computer division, including the ThinkPad line of laptops and tablets, in what year?",
+    "options": {
+      "A": "2008",
+      "B": "2002",
+      "C": "2005",
+      "D": "1999"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: 2005. This question tests Science & Technology — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 24
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "The French mathematician Évariste Galois is primarily known for his work in which?",
+    "options": {
+      "A": "Galois' Continued Fractions",
+      "B": "Galois Theory",
+      "C": "Galois' Method for PDE's ",
+      "D": "Abelian Integration"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Galois Theory. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 25
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "2020",
+    "difficulty": "Hard",
+    "question": "Which of these is used to show that Earth spins on an axis? ",
+    "options": {
+      "A": "Foucault Pendulum ",
+      "B": "Sundial",
+      "C": "Polaris",
+      "D": "Tectonic Plates "
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Foucault Pendulum . This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 26
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2021",
+    "difficulty": "Medium",
+    "question": "Which of these species is not extinct?",
+    "options": {
+      "A": "Japanese sea lion",
+      "B": "Komodo dragon",
+      "C": "Saudi gazelle",
+      "D": "Tasmanian tiger"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Komodo dragon. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 27
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "2019",
+    "difficulty": "Easy",
+    "question": "What did Gregory Mendel use to test genetic crossovers?",
+    "options": {
+      "A": "Cats",
+      "B": "Peas",
+      "C": "Parrots",
+      "D": "Flowers"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Peas. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 28
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "The Battle of Hastings was fought in which year?",
+    "options": {
+      "A": "1066",
+      "B": "1420",
+      "C": "1204",
+      "D": "911"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: 1066. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 29
+  },
+  {
+    "subject": "UPSC — Art, Culture & Mythology",
+    "exam": "UPSC",
+    "year": "2019",
+    "difficulty": "Medium",
+    "question": "According to the Egyptian Myth of Osiris, who murdered Osiris?",
+    "options": {
+      "A": "Set",
+      "B": "Horus",
+      "C": "Ra",
+      "D": "Anhur"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Set. This question tests Art, Culture & Mythology — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 30
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "2024",
+    "difficulty": "Hard",
+    "question": "Which of these cities is NOT in England?",
+    "options": {
+      "A": "Manchester",
+      "B": "Southampton",
+      "C": "Oxford",
+      "D": "Edinburgh"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Edinburgh. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 31
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Xanthophobia is the fear of what color?",
+    "options": {
+      "A": "Green",
+      "B": "Red",
+      "C": "Blue",
+      "D": "Yellow"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Yellow. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 32
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2020",
+    "difficulty": "Medium",
+    "question": "Cashmere is the wool from which kind of animal?",
+    "options": {
+      "A": "Llama",
+      "B": "Goat",
+      "C": "Sheep",
+      "D": "Camel"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Goat. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 33
+  },
+  {
+    "subject": "GK — Science & Technology",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Which of these was the name of a bug found in April 2014 in the publicly available OpenSSL cryptography library?",
+    "options": {
+      "A": "Heartbleed",
+      "B": "Shellshock",
+      "C": "Corrupted Blood",
+      "D": "Shellscript"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Heartbleed. This question tests Science & Technology — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 34
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Which of the following is the term for \"surgical complications resulting from surgical sponges left inside the patient's body?",
+    "options": {
+      "A": "Gossypiboma",
+      "B": "Gongoozler",
+      "C": "Jentacular",
+      "D": "Meupareunia"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Gossypiboma. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 35
+  },
+  {
+    "subject": "UPSC — Art, Culture & Mythology",
+    "exam": "UPSC",
+    "year": "2019",
+    "difficulty": "Medium",
+    "question": "Who is the god of war in Polynesian mythology?",
+    "options": {
+      "A": "Hina",
+      "B": "'Oro",
+      "C": "Kohara",
+      "D": "Māui"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: 'Oro. This question tests Art, Culture & Mythology — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 36
+  },
+  {
+    "subject": "GK — Science & Technology",
+    "exam": "GK",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "Which RAID array type is associated with data mirroring?",
+    "options": {
+      "A": "RAID 0",
+      "B": "RAID 1",
+      "C": "RAID 10",
+      "D": "RAID 5"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: RAID 1. This question tests Science & Technology — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 37
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "What is the derivative of Acceleration with respect to time?",
+    "options": {
+      "A": "Jerk",
+      "B": "Slide",
+      "C": "Shift",
+      "D": "Bump"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Jerk. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 38
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "2019",
+    "difficulty": "Hard",
+    "question": "In flight systems, what does the initialism \"TCAS\" stand for?",
+    "options": {
+      "A": "Traffic Call-sign Abbreviation System",
+      "B": "Traffic Collision Avoidance System",
+      "C": "Traffic Configuration Alignment System",
+      "D": "Traffic Communication Alert System"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Traffic Collision Avoidance System. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 39
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2020",
+    "difficulty": "Hard",
+    "question": "What is the plane curve proposed by Descartes to challenge Fermat's extremum-finding techniques called?",
+    "options": {
+      "A": "Cartesian Coordinates",
+      "B": "Elliptic Paraboloid of Descartes",
+      "C": "Folium of Descartes",
+      "D": "Descarte's Helicoid"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Folium of Descartes. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 40
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "2022",
+    "difficulty": "Easy",
+    "question": "What is the largest planet in the Solar System?",
+    "options": {
+      "A": "Jupiter",
+      "B": "Saturn",
+      "C": "Earth",
+      "D": "Mars"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Jupiter. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 41
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "2022",
+    "difficulty": "Hard",
+    "question": "Which of the following Inuit languages was the FIRST to use a unique writing system not based on the Latin alphabet?",
+    "options": {
+      "A": "Inuktitut",
+      "B": "Greenlandic",
+      "C": "Inuinnaqtun",
+      "D": "Inupiat"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Inuktitut. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 42
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "2020",
+    "difficulty": "Hard",
+    "question": "In physics, conservation of energy and conservation of momentum are both consequences of which of the following?",
+    "options": {
+      "A": "Bell's Theorem",
+      "B": "Carnot's Theorem",
+      "C": "Noether's Theorem",
+      "D": "Wick's Theorem"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Noether's Theorem. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 43
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2023",
+    "difficulty": "Medium",
+    "question": "What does \"hippopotamus\" mean and in what langauge?",
+    "options": {
+      "A": "Fat Pig (Latin)",
+      "B": "River Horse (Latin)",
+      "C": "River Horse (Greek)",
+      "D": "Fat Pig (Greek)"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: River Horse (Greek). This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 44
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2019",
+    "difficulty": "Medium",
+    "question": "What type of animal is a natterjack?",
+    "options": {
+      "A": "Fish",
+      "B": "Toad",
+      "C": "Insect",
+      "D": "Bird"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Toad. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 45
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2019",
+    "difficulty": "Medium",
+    "question": "What is the name of the family that the domestic cat is a member of?",
+    "options": {
+      "A": "Felidae",
+      "B": "Felis",
+      "C": "Felinae",
+      "D": "Cat"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Felidae. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 46
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2022",
+    "difficulty": "Hard",
+    "question": "How many zeptometres are inside one femtometre?",
+    "options": {
+      "A": "1,000,000",
+      "B": "1000",
+      "C": "10",
+      "D": "1,000,000,000"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: 1,000,000. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 47
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Who was the last emperor of Mexico?",
+    "options": {
+      "A": "Napoleon III",
+      "B": "Ferdinand Maximilian",
+      "C": "Agustín de Iturbide",
+      "D": "Andrés Manuel López Obrador"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Ferdinand Maximilian. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 48
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Which horizon in a soil profile consists of bedrock?",
+    "options": {
+      "A": "D",
+      "B": "B",
+      "C": "O",
+      "D": "R"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: R. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 49
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "What is the approximate value of mathematical constant e?",
+    "options": {
+      "A": "3.14",
+      "B": "2.72",
+      "C": "1.62",
+      "D": "1.41"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: 2.72. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 50
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2024",
+    "difficulty": "Hard",
+    "question": "Integration is the reverse of what mathematical operation?",
+    "options": {
+      "A": "Division",
+      "B": "Derivation",
+      "C": "Multiplication",
+      "D": "Standard Deviation"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Derivation. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 51
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2019",
+    "difficulty": "Hard",
+    "question": "The decimal number 31 in hexadecimal would be what?",
+    "options": {
+      "A": "1B",
+      "B": "1F",
+      "C": "3D",
+      "D": "2E"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: 1F. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 52
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "The word \"abulia\" means which of the following?",
+    "options": {
+      "A": "A feverish desire to rip one's clothes off",
+      "B": "The inability to concentrate on anything",
+      "C": "The inability to make decisions",
+      "D": "The inability to stand up"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: The inability to make decisions. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 53
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "2019",
+    "difficulty": "Hard",
+    "question": "In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?",
+    "options": {
+      "A": "John and Mary",
+      "B": "Joseph and Catherine",
+      "C": "William and Elizabeth",
+      "D": "George and Anne"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: John and Mary. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 54
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "2020",
+    "difficulty": "Hard",
+    "question": "In addition to his career as an astrologer and \"prophet\", Nostradamus published a 1555 treatise that included a section on what?",
+    "options": {
+      "A": "Cheating at card games",
+      "B": "Teaching parrots to talk",
+      "C": "Making jams and jellies",
+      "D": "Digging graves"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Making jams and jellies. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 55
+  },
+  {
+    "subject": "UPSC — Art, Culture & Mythology",
+    "exam": "UPSC",
+    "year": "2021",
+    "difficulty": "Medium",
+    "question": "In Norse Mythology, what is the name of the symbol commonly referred to as the \"Tree of Life\"?",
+    "options": {
+      "A": "Odin's Roots",
+      "B": "Tree of the Earth",
+      "C": "Yggdrasil",
+      "D": "Ymir"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Yggdrasil. This question tests Art, Culture & Mythology — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 56
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "2020",
+    "difficulty": "Hard",
+    "question": "Which scientific unit is named after an Italian nobleman?",
+    "options": {
+      "A": "Volt",
+      "B": "Ohm",
+      "C": "Pascal",
+      "D": "Hertz"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Volt. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 57
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "To which language family does Kazakh belong?",
+    "options": {
+      "A": "Mongolic",
+      "B": "Turkic",
+      "C": "Uralic",
+      "D": "Indo-European"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Turkic. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 58
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2023",
+    "difficulty": "Medium",
+    "question": "The dish Fugu, is made from what family of fish?",
+    "options": {
+      "A": "Pufferfish",
+      "B": "Bass",
+      "C": "Salmon",
+      "D": "Mackerel"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Pufferfish. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 59
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "2022",
+    "difficulty": "Hard",
+    "question": "What is the most potent toxin known?",
+    "options": {
+      "A": "Asbestos",
+      "B": "Cyanide",
+      "C": "Botulinum toxin",
+      "D": "Ricin"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Botulinum toxin. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 60
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Which of the following mathematicians made major contributions to game theory?",
+    "options": {
+      "A": "Stefan Banach",
+      "B": "Carl Friedrich Gauss",
+      "C": "John Von Neumann",
+      "D": "Leonhard Euler"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: John Von Neumann. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 61
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "According to Fair Works Australia, how long do you have to work to get Long Service Leave?",
+    "options": {
+      "A": "2 years",
+      "B": "6 months",
+      "C": "7 years",
+      "D": "8 years"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: 7 years. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 62
+  },
+  {
+    "subject": "UPSC — Art, Culture & Mythology",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Medium",
+    "question": "Hel was the daughter of which Norse Mythological figure?",
+    "options": {
+      "A": "Loki",
+      "B": "Odin",
+      "C": "Thor",
+      "D": "Balder"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Loki. This question tests Art, Culture & Mythology — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 63
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2020",
+    "difficulty": "Medium",
+    "question": "\"Decapods\" are an order of ten-footed crustaceans.  Which of these are NOT decapods?",
+    "options": {
+      "A": "Shrimp",
+      "B": "Krill",
+      "C": "Crabs",
+      "D": "Lobsters"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Krill. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 64
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Which of these countries is NOT a part of the Asian continent?",
+    "options": {
+      "A": "Russia",
+      "B": "Singapore",
+      "C": "Suriname",
+      "D": "Georgia"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Suriname. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 65
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "2021",
+    "difficulty": "Hard",
+    "question": "Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?",
+    "options": {
+      "A": "Triassic–Jurassic",
+      "B": "Ordovician–Silurian",
+      "C": "Permian–Triassic",
+      "D": "Cretaceous-Paleogene"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Cretaceous-Paleogene. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 66
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "2020",
+    "difficulty": "Hard",
+    "question": "During World War I, which nation's monarchs were blood related?",
+    "options": {
+      "A": "England, Germany, Russia",
+      "B": "Serbia, Russia, Croatia",
+      "C": "Germany, Spain, Austria",
+      "D": "France, Russia, Germany"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: England, Germany, Russia. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 67
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2019",
+    "difficulty": "Medium",
+    "question": "Which dog breed is named after a region in Croatia",
+    "options": {
+      "A": "Chihuahua ",
+      "B": "Pekingnese",
+      "C": "Pomeranian",
+      "D": "Dalmatian"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Dalmatian. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 68
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "2019",
+    "difficulty": "Hard",
+    "question": "In what year did the Battle of Verdun take place?",
+    "options": {
+      "A": "1915",
+      "B": "1917",
+      "C": "1916",
+      "D": "1918"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: 1916. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 69
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "PYQ",
+    "difficulty": "Easy",
+    "question": "Which of the following blood vessels carries deoxygenated blood?",
+    "options": {
+      "A": "Pulmonary Vein",
+      "B": "Coronary Artery",
+      "C": "Pulmonary Artery",
+      "D": "Aorta"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Pulmonary Artery. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 70
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "What is \"Stenoma\"?",
+    "options": {
+      "A": "A port city in the carribean",
+      "B": "A combat stimulant from WW2",
+      "C": "A genus of moths",
+      "D": "A type of seasoning"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: A genus of moths. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 71
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "2022",
+    "difficulty": "Hard",
+    "question": "What was found in 1946 by two young shepards near a cave?",
+    "options": {
+      "A": "The Blackbeard Chest",
+      "B": "The First Oaxaca Cave Sleeper",
+      "C": "Dead Sea Scrolls",
+      "D": "Sheep"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Dead Sea Scrolls. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 72
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Which of these numbers is closest to the total number of possible states for an army standard Enigma Machine?",
+    "options": {
+      "A": "1.58 x 10^20",
+      "B": "1.58 x  10^18",
+      "C": "1.58 x 10^22",
+      "D": "1.58 x 10^24"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: 1.58 x 10^20. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 73
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "2024",
+    "difficulty": "Hard",
+    "question": "The ancient city of Chichén Itzá was built by which civilization?",
+    "options": {
+      "A": "Mayans",
+      "B": "Toltecs",
+      "C": "Aztecs",
+      "D": "Incas"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Mayans. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 74
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "The Maluku islands (informally known as the Spice Islands) belong to which country?",
+    "options": {
+      "A": "Chile",
+      "B": "Fiji",
+      "C": "Indonesia",
+      "D": "New Zealand"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Indonesia. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 75
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "The 'Islets of Langerhans' is found in which human organ?",
+    "options": {
+      "A": "Liver",
+      "B": "Kidney",
+      "C": "Pancreas",
+      "D": "Brain"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Pancreas. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 76
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2021",
+    "difficulty": "Medium",
+    "question": "What is the common term for bovine spongiform encephalopathy (BSE)?",
+    "options": {
+      "A": "Weil's disease",
+      "B": "Foot-and-mouth disease",
+      "C": "Mad Cow disease",
+      "D": "Milk fever"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Mad Cow disease. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 77
+  },
+  {
+    "subject": "GK — Science & Technology",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "What major programming language does Unreal Engine 4 use?",
+    "options": {
+      "A": "ECMAScript",
+      "B": "C++",
+      "C": "Assembly",
+      "D": "C#"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: C++. This question tests Science & Technology — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 78
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "2024",
+    "difficulty": "Hard",
+    "question": "Virtual reality company Oculus VR lost which of it's co-founders in a freak car accident in 2013?",
+    "options": {
+      "A": "Andrew Scott Reisse",
+      "B": "Jack McCauley",
+      "C": "Nate Mitchell",
+      "D": "Palmer Luckey"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Andrew Scott Reisse. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 79
+  },
+  {
+    "subject": "GK — Science & Technology",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "What is the codename of the eighth generation Intel Core micro-architecture launched in October 2017?",
+    "options": {
+      "A": "Skylake",
+      "B": "Broadwell",
+      "C": "Sandy Bridge",
+      "D": "Coffee Lake"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Coffee Lake. This question tests Science & Technology — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 80
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2019",
+    "difficulty": "Medium",
+    "question": "A carnivorous animal eats flesh, what does a nucivorous animal eat?",
+    "options": {
+      "A": "Fruit",
+      "B": "Nuts",
+      "C": "Seaweed",
+      "D": "Nothing"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Nuts. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 81
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "The emblem on the flag of the Republic of Tajikistan features a sunrise over mountains below what symbol?",
+    "options": {
+      "A": "Bird",
+      "B": "Crown",
+      "C": "Tree",
+      "D": "Sickle"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Crown. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 82
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "The mountainous Khyber Pass connects which of the two following countries?",
+    "options": {
+      "A": "Afghanistan and Pakistan",
+      "B": "Tajikistan and Kyrgyzstan",
+      "C": "India and Nepal",
+      "D": "Pakistan and India"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Afghanistan and Pakistan. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 83
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "2022",
+    "difficulty": "Easy",
+    "question": "What name is given to all baby marsupials?",
+    "options": {
+      "A": "Cub",
+      "B": "Calf",
+      "C": "Pup",
+      "D": "Joey"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Joey. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 84
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "2022",
+    "difficulty": "Hard",
+    "question": "\"Nephelococcygia\" is the practice of doing what? ",
+    "options": {
+      "A": "Finding shapes in clouds",
+      "B": "Swimming in freezing water",
+      "C": "Breaking glass with your voice",
+      "D": "Sleeping with your eyes open"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Finding shapes in clouds. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 85
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "2021",
+    "difficulty": "Hard",
+    "question": "What North American tourist attraction is served by the \"Maid of the Mist\" tour company?",
+    "options": {
+      "A": "Yosemite National Park",
+      "B": "Whistler, British Columbia",
+      "C": "Disney World",
+      "D": "Niagara Falls"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Niagara Falls. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 86
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "PYQ",
+    "difficulty": "Medium",
+    "question": "What is the national bird of Bahrain?",
+    "options": {
+      "A": "Hummingbird",
+      "B": "Falcon",
+      "C": "Sparrow",
+      "D": "Bulbul"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Bulbul. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 87
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2021",
+    "difficulty": "Medium",
+    "question": "What is the collective noun for bears?",
+    "options": {
+      "A": "Sloth",
+      "B": "Tribe",
+      "C": "Husk",
+      "D": "Drove"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Sloth. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 88
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "What is the smallest number that can be expressed as the sum of two positive cubes in two different ways?",
+    "options": {
+      "A": "1729",
+      "B": "561",
+      "C": "4104",
+      "D": "91"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: 1729. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 89
+  },
+  {
+    "subject": "NEET — Biology · Zoology & Animal Sciences",
+    "exam": "NEET",
+    "year": "2022",
+    "difficulty": "Medium",
+    "question": "What are rhino's horn made of?",
+    "options": {
+      "A": "Skin",
+      "B": "Keratin",
+      "C": "Bone",
+      "D": "Ivory"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Keratin. This question tests Zoology & Animal Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 90
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "2023",
+    "difficulty": "Easy",
+    "question": "What is the thin, outermost layer of the Earth?",
+    "options": {
+      "A": "Outer Core",
+      "B": "Exosphere",
+      "C": "Crust",
+      "D": "Mantle"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Crust. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 91
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "2023",
+    "difficulty": "Easy",
+    "question": "Which element has the chemical symbol 'Fe'?",
+    "options": {
+      "A": "Iron",
+      "B": "Gold",
+      "C": "Tin",
+      "D": "Silver"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Iron. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 92
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "2021",
+    "difficulty": "Hard",
+    "question": "Which product did Nokia, the telecommunications company, originally sell?",
+    "options": {
+      "A": "Processors",
+      "B": "Paper",
+      "C": "Phones",
+      "D": "Computers"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Paper. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 93
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2021",
+    "difficulty": "Hard",
+    "question": "Which of these did mathematician Leonhard Euler NOT develop?",
+    "options": {
+      "A": "An improvement to the Fast Fourier Transform",
+      "B": "A formula linking vertices, edges and faces on a graph",
+      "C": "A method of solving first-order differential equations",
+      "D": "An identity linking the numbers e, pi and i"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: An improvement to the Fast Fourier Transform. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 94
+  },
+  {
+    "subject": "NEET — Biology · Botany & Life Sciences",
+    "exam": "NEET",
+    "year": "PYQ",
+    "difficulty": "Easy",
+    "question": "The biggest distinction between a eukaryotic cell and a prokaryotic cell is:",
+    "options": {
+      "A": "The overall size",
+      "B": "The presence or absence of a nucleus",
+      "C": "The presence or absence of certain organelles",
+      "D": "The mode of reproduction"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: The presence or absence of a nucleus. This question tests Botany & Life Sciences — a key topic in NEET examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 95
+  },
+  {
+    "subject": "UPSC — Art, Culture & Mythology",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Medium",
+    "question": "The Hippogriff, not to be confused with the Griffon, is a magical creature with the front half of an eagle, and the back half of what?",
+    "options": {
+      "A": "A Tiger",
+      "B": "A Dragon",
+      "C": "A Lion",
+      "D": "A Horse"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: A Horse. This question tests Art, Culture & Mythology — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 96
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "This Ghanaian entrepreneur is a pioneer of microlending.",
+    "options": {
+      "A": "Ama Ata Aido",
+      "B": "Sionne Neely",
+      "C": "Farida Bedwei",
+      "D": "Esther Afua Ocloo"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Esther Afua Ocloo. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 97
+  },
+  {
+    "subject": "UPSC — World History",
+    "exam": "UPSC",
+    "year": "2020",
+    "difficulty": "Hard",
+    "question": "Which country did the Eureka Rebellion, an 1856 battle against colonial rule, take place in?",
+    "options": {
+      "A": "Brazil",
+      "B": "India",
+      "C": "Canada",
+      "D": "Australia"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: Australia. This question tests World History — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 98
+  },
+  {
+    "subject": "JEE — Physics · Classical Mechanics",
+    "exam": "JEE",
+    "year": "2022",
+    "difficulty": "Hard",
+    "question": "Which of the following is a major muscle of the back?",
+    "options": {
+      "A": "Trapezius",
+      "B": "Trapezium",
+      "C": "Trapezoid",
+      "D": "Triquetrum"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Trapezius. This question tests Classical Mechanics — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 99
+  },
+  {
+    "subject": "GK — Science & Technology",
+    "exam": "GK",
+    "year": "2022",
+    "difficulty": "Hard",
+    "question": "What is the maximum value of a 32-bit signed binary integer?",
+    "options": {
+      "A": "255",
+      "B": "2,147,483,647",
+      "C": "2048",
+      "D": "9,223,372,036,854,775,807"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: 2,147,483,647. This question tests Science & Technology — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 100
+  },
+  {
+    "subject": "UPSC — World Geography",
+    "exam": "UPSC",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Santorini is an island belonging to what European Country?",
+    "options": {
+      "A": "Greece",
+      "B": "Turkey",
+      "C": "Italy",
+      "D": "Spain"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: Greece. This question tests World Geography — a key topic in UPSC examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 101
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "2019",
+    "difficulty": "Hard",
+    "question": "What type of dog is 'Handsome Dan', the mascot of Yale University?",
+    "options": {
+      "A": "Boxer",
+      "B": "Pug",
+      "C": "Bulldog",
+      "D": "Yorkshire Terrier"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Bulldog. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 102
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Roughly how many ingested apple seeds would it take to receive a fatal dose of cyanide?",
+    "options": {
+      "A": "2,000",
+      "B": "20,000",
+      "C": "20",
+      "D": "200"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: 200. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 103
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "Which of these cities does NOT have a United States Minting location?",
+    "options": {
+      "A": "St. Louis, MO",
+      "B": "Philidelphia, PA",
+      "C": "West Point, NY",
+      "D": "San Fransisco, CA"
+    },
+    "answer": "A",
+    "explanation": "Correct answer: St. Louis, MO. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 104
+  },
+  {
+    "subject": "JEE — Mathematics · Calculus & Algebra",
+    "exam": "JEE",
+    "year": "2021",
+    "difficulty": "Hard",
+    "question": "Which of the following famous mathematicians died in a duel at the age of 20?",
+    "options": {
+      "A": "Gauss",
+      "B": "Galois",
+      "C": "Abel",
+      "D": "Euler"
+    },
+    "answer": "B",
+    "explanation": "Correct answer: Galois. This question tests Calculus & Algebra — a key topic in JEE examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 105
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "PYQ",
+    "difficulty": "Hard",
+    "question": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
+    "options": {
+      "A": "The Tomb of the Acient's",
+      "B": "Snake Pit",
+      "C": "The Puppet Master's Theater",
+      "D": "The Shatter's"
+    },
+    "answer": "D",
+    "explanation": "Correct answer: The Shatter's. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 106
+  },
+  {
+    "subject": "GK — General Knowledge",
+    "exam": "GK",
+    "year": "2023",
+    "difficulty": "Hard",
+    "question": "Nephelococcygia is the practice of doing what?",
+    "options": {
+      "A": "Swimming in freezing water",
+      "B": "Breaking glass with your voice",
+      "C": "Finding shapes in clouds",
+      "D": "Sleeping with your eyes open"
+    },
+    "answer": "C",
+    "explanation": "Correct answer: Finding shapes in clouds. This question tests General Knowledge — a key topic in GK examination.",
+    "source": "OpenTDB",
+    "type": "mcq",
+    "id": 107
+  }
+]
